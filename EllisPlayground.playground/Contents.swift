@@ -105,6 +105,7 @@ let invertionWithLeadClosestToNote1 = cmaj7.invertionWithLeadClosestToNote(Note.
 invertionWithLeadClosestToNote1.notes
 invertionWithLeadClosestToNote1.Inversion
 
+
 // Harmonizers
 let triadHarmonizer = TriadsKeyHarmonizer(key: Key.CMajor)
 triadHarmonizer.i().name
