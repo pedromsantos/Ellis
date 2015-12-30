@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF58D47E1C340F6E00B6D2C0 /* Ellis.h in Headers */ = {isa = PBXBuildFile; fileRef = CF58D47D1C340F6E00B6D2C0 /* Ellis.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF58D4851C340F6E00B6D2C0 /* Ellis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF58D47A1C340F6E00B6D2C0 /* Ellis.framework */; settings = {ASSET_TAGS = (); }; };
+		CF58D4A51C34106300B6D2C0 /* Accident.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4941C34106300B6D2C0 /* Accident.swift */; settings = {ASSET_TAGS = (); }; };
+		CF58D4A61C34106300B6D2C0 /* Chord.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4951C34106300B6D2C0 /* Chord.swift */; settings = {ASSET_TAGS = (); }; };
+		CF58D4A71C34106300B6D2C0 /* ChordBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4961C34106300B6D2C0 /* ChordBuilder.swift */; settings = {ASSET_TAGS = (); }; };
+		CF58D4A91C34106300B6D2C0 /* ChordFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4981C34106300B6D2C0 /* ChordFunction.swift */; settings = {ASSET_TAGS = (); }; };
+		CF58D4AA1C34106300B6D2C0 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4991C34106300B6D2C0 /* Interval.swift */; settings = {ASSET_TAGS = (); }; };
+		CF58D4AB1C34106300B6D2C0 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D49A1C34106300B6D2C0 /* Key.swift */; settings = {ASSET_TAGS = (); }; };
+		CF58D4AC1C34106300B6D2C0 /* KeyHarmonizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D49B1C34106300B6D2C0 /* KeyHarmonizer.swift */; settings = {ASSET_TAGS = (); }; };
+		CF58D4AD1C34106300B6D2C0 /* KeyQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D49C1C34106300B6D2C0 /* KeyQuality.swift */; settings = {ASSET_TAGS = (); }; };
+		CF58D4AE1C34106300B6D2C0 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D49D1C34106300B6D2C0 /* Note.swift */; settings = {ASSET_TAGS = (); }; };
+		CF58D4AF1C34106300B6D2C0 /* NoteFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D49E1C34106300B6D2C0 /* NoteFunction.swift */; settings = {ASSET_TAGS = (); }; };
+		CF58D4B01C34106300B6D2C0 /* NoteWithFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D49F1C34106300B6D2C0 /* NoteWithFunction.swift */; settings = {ASSET_TAGS = (); }; };
+		CF58D4B11C34106300B6D2C0 /* Octave.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4A01C34106300B6D2C0 /* Octave.swift */; settings = {ASSET_TAGS = (); }; };
+		CF58D4B21C34106300B6D2C0 /* SeventhsKeyHarmonizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4A11C34106300B6D2C0 /* SeventhsKeyHarmonizer.swift */; settings = {ASSET_TAGS = (); }; };
+		CF58D4B51C34106300B6D2C0 /* TriadsKeyHarmonizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4A41C34106300B6D2C0 /* TriadsKeyHarmonizer.swift */; settings = {ASSET_TAGS = (); }; };
+		CF58D4BB1C34108300B6D2C0 /* ChordBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4B61C34108300B6D2C0 /* ChordBuilderTests.swift */; settings = {ASSET_TAGS = (); }; };
+		CF58D4BC1C34108300B6D2C0 /* ChordFunctionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4B71C34108300B6D2C0 /* ChordFunctionTests.swift */; settings = {ASSET_TAGS = (); }; };
+		CF58D4BD1C34108300B6D2C0 /* ChordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4B81C34108300B6D2C0 /* ChordTests.swift */; settings = {ASSET_TAGS = (); }; };
+		CF58D4BF1C34108300B6D2C0 /* KeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4BA1C34108300B6D2C0 /* KeyTests.swift */; settings = {ASSET_TAGS = (); }; };
+		CF58D4C51C34108E00B6D2C0 /* IntervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4C01C34108E00B6D2C0 /* IntervalTests.swift */; settings = {ASSET_TAGS = (); }; };
+		CF58D4C61C34108E00B6D2C0 /* NoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4C11C34108E00B6D2C0 /* NoteTests.swift */; settings = {ASSET_TAGS = (); }; };
+		CF58D4C71C34108E00B6D2C0 /* SeventhsKeyHarmonizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4C21C34108E00B6D2C0 /* SeventhsKeyHarmonizerTests.swift */; settings = {ASSET_TAGS = (); }; };
+		CF58D4C91C34108E00B6D2C0 /* TriadsKeyHarmonizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4C41C34108E00B6D2C0 /* TriadsKeyHarmonizerTests.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF58D4861C340F6E00B6D2C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF58D4711C340F6E00B6D2C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF58D4791C340F6E00B6D2C0;
+			remoteInfo = Ellis;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF58D47A1C340F6E00B6D2C0 /* Ellis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ellis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF58D47D1C340F6E00B6D2C0 /* Ellis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ellis.h; sourceTree = "<group>"; };
+		CF58D47F1C340F6E00B6D2C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF58D4841C340F6E00B6D2C0 /* EllisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EllisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF58D48B1C340F6E00B6D2C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF58D4941C34106300B6D2C0 /* Accident.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Accident.swift; sourceTree = "<group>"; };
+		CF58D4951C34106300B6D2C0 /* Chord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chord.swift; sourceTree = "<group>"; };
+		CF58D4961C34106300B6D2C0 /* ChordBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordBuilder.swift; sourceTree = "<group>"; };
+		CF58D4981C34106300B6D2C0 /* ChordFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordFunction.swift; sourceTree = "<group>"; };
+		CF58D4991C34106300B6D2C0 /* Interval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interval.swift; sourceTree = "<group>"; };
+		CF58D49A1C34106300B6D2C0 /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
+		CF58D49B1C34106300B6D2C0 /* KeyHarmonizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyHarmonizer.swift; sourceTree = "<group>"; };
+		CF58D49C1C34106300B6D2C0 /* KeyQuality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyQuality.swift; sourceTree = "<group>"; };
+		CF58D49D1C34106300B6D2C0 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		CF58D49E1C34106300B6D2C0 /* NoteFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteFunction.swift; sourceTree = "<group>"; };
+		CF58D49F1C34106300B6D2C0 /* NoteWithFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteWithFunction.swift; sourceTree = "<group>"; };
+		CF58D4A01C34106300B6D2C0 /* Octave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Octave.swift; sourceTree = "<group>"; };
+		CF58D4A11C34106300B6D2C0 /* SeventhsKeyHarmonizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeventhsKeyHarmonizer.swift; sourceTree = "<group>"; };
+		CF58D4A41C34106300B6D2C0 /* TriadsKeyHarmonizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriadsKeyHarmonizer.swift; sourceTree = "<group>"; };
+		CF58D4B61C34108300B6D2C0 /* ChordBuilderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordBuilderTests.swift; sourceTree = "<group>"; };
+		CF58D4B71C34108300B6D2C0 /* ChordFunctionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordFunctionTests.swift; sourceTree = "<group>"; };
+		CF58D4B81C34108300B6D2C0 /* ChordTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordTests.swift; sourceTree = "<group>"; };
+		CF58D4BA1C34108300B6D2C0 /* KeyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyTests.swift; sourceTree = "<group>"; };
+		CF58D4C01C34108E00B6D2C0 /* IntervalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntervalTests.swift; sourceTree = "<group>"; };
+		CF58D4C11C34108E00B6D2C0 /* NoteTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTests.swift; sourceTree = "<group>"; };
+		CF58D4C21C34108E00B6D2C0 /* SeventhsKeyHarmonizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeventhsKeyHarmonizerTests.swift; sourceTree = "<group>"; };
+		CF58D4C41C34108E00B6D2C0 /* TriadsKeyHarmonizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriadsKeyHarmonizerTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF58D4761C340F6E00B6D2C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF58D4811C340F6E00B6D2C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF58D4851C340F6E00B6D2C0 /* Ellis.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF58D4701C340F6E00B6D2C0 = {
+			isa = PBXGroup;
+			children = (
+				CF58D47C1C340F6E00B6D2C0 /* Ellis */,
+				CF58D4881C340F6E00B6D2C0 /* EllisTests */,
+				CF58D47B1C340F6E00B6D2C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF58D47B1C340F6E00B6D2C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF58D47A1C340F6E00B6D2C0 /* Ellis.framework */,
+				CF58D4841C340F6E00B6D2C0 /* EllisTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF58D47C1C340F6E00B6D2C0 /* Ellis */ = {
+			isa = PBXGroup;
+			children = (
+				CF58D4941C34106300B6D2C0 /* Accident.swift */,
+				CF58D4951C34106300B6D2C0 /* Chord.swift */,
+				CF58D4961C34106300B6D2C0 /* ChordBuilder.swift */,
+				CF58D4981C34106300B6D2C0 /* ChordFunction.swift */,
+				CF58D4991C34106300B6D2C0 /* Interval.swift */,
+				CF58D49A1C34106300B6D2C0 /* Key.swift */,
+				CF58D49B1C34106300B6D2C0 /* KeyHarmonizer.swift */,
+				CF58D49C1C34106300B6D2C0 /* KeyQuality.swift */,
+				CF58D49D1C34106300B6D2C0 /* Note.swift */,
+				CF58D49E1C34106300B6D2C0 /* NoteFunction.swift */,
+				CF58D49F1C34106300B6D2C0 /* NoteWithFunction.swift */,
+				CF58D4A01C34106300B6D2C0 /* Octave.swift */,
+				CF58D4A11C34106300B6D2C0 /* SeventhsKeyHarmonizer.swift */,
+				CF58D4A41C34106300B6D2C0 /* TriadsKeyHarmonizer.swift */,
+				CF58D47D1C340F6E00B6D2C0 /* Ellis.h */,
+				CF58D47F1C340F6E00B6D2C0 /* Info.plist */,
+			);
+			path = Ellis;
+			sourceTree = "<group>";
+		};
+		CF58D4881C340F6E00B6D2C0 /* EllisTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF58D4C01C34108E00B6D2C0 /* IntervalTests.swift */,
+				CF58D4C11C34108E00B6D2C0 /* NoteTests.swift */,
+				CF58D4C21C34108E00B6D2C0 /* SeventhsKeyHarmonizerTests.swift */,
+				CF58D4C41C34108E00B6D2C0 /* TriadsKeyHarmonizerTests.swift */,
+				CF58D4B61C34108300B6D2C0 /* ChordBuilderTests.swift */,
+				CF58D4B71C34108300B6D2C0 /* ChordFunctionTests.swift */,
+				CF58D4B81C34108300B6D2C0 /* ChordTests.swift */,
+				CF58D4BA1C34108300B6D2C0 /* KeyTests.swift */,
+				CF58D48B1C340F6E00B6D2C0 /* Info.plist */,
+			);
+			path = EllisTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CF58D4771C340F6E00B6D2C0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF58D47E1C340F6E00B6D2C0 /* Ellis.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CF58D4791C340F6E00B6D2C0 /* Ellis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF58D48E1C340F6E00B6D2C0 /* Build configuration list for PBXNativeTarget "Ellis" */;
+			buildPhases = (
+				CF58D4751C340F6E00B6D2C0 /* Sources */,
+				CF58D4761C340F6E00B6D2C0 /* Frameworks */,
+				CF58D4771C340F6E00B6D2C0 /* Headers */,
+				CF58D4781C340F6E00B6D2C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ellis;
+			productName = Ellis;
+			productReference = CF58D47A1C340F6E00B6D2C0 /* Ellis.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CF58D4831C340F6E00B6D2C0 /* EllisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF58D4911C340F6E00B6D2C0 /* Build configuration list for PBXNativeTarget "EllisTests" */;
+			buildPhases = (
+				CF58D4801C340F6E00B6D2C0 /* Sources */,
+				CF58D4811C340F6E00B6D2C0 /* Frameworks */,
+				CF58D4821C340F6E00B6D2C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF58D4871C340F6E00B6D2C0 /* PBXTargetDependency */,
+			);
+			name = EllisTests;
+			productName = EllisTests;
+			productReference = CF58D4841C340F6E00B6D2C0 /* EllisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF58D4711C340F6E00B6D2C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = BytesTeam;
+				TargetAttributes = {
+					CF58D4791C340F6E00B6D2C0 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					CF58D4831C340F6E00B6D2C0 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = CF58D4741C340F6E00B6D2C0 /* Build configuration list for PBXProject "Ellis" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF58D4701C340F6E00B6D2C0;
+			productRefGroup = CF58D47B1C340F6E00B6D2C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF58D4791C340F6E00B6D2C0 /* Ellis */,
+				CF58D4831C340F6E00B6D2C0 /* EllisTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF58D4781C340F6E00B6D2C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF58D4821C340F6E00B6D2C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF58D4751C340F6E00B6D2C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF58D4AB1C34106300B6D2C0 /* Key.swift in Sources */,
+				CF58D4A61C34106300B6D2C0 /* Chord.swift in Sources */,
+				CF58D4A91C34106300B6D2C0 /* ChordFunction.swift in Sources */,
+				CF58D4AD1C34106300B6D2C0 /* KeyQuality.swift in Sources */,
+				CF58D4AF1C34106300B6D2C0 /* NoteFunction.swift in Sources */,
+				CF58D4B51C34106300B6D2C0 /* TriadsKeyHarmonizer.swift in Sources */,
+				CF58D4B01C34106300B6D2C0 /* NoteWithFunction.swift in Sources */,
+				CF58D4AA1C34106300B6D2C0 /* Interval.swift in Sources */,
+				CF58D4AE1C34106300B6D2C0 /* Note.swift in Sources */,
+				CF58D4B21C34106300B6D2C0 /* SeventhsKeyHarmonizer.swift in Sources */,
+				CF58D4A71C34106300B6D2C0 /* ChordBuilder.swift in Sources */,
+				CF58D4B11C34106300B6D2C0 /* Octave.swift in Sources */,
+				CF58D4AC1C34106300B6D2C0 /* KeyHarmonizer.swift in Sources */,
+				CF58D4A51C34106300B6D2C0 /* Accident.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF58D4801C340F6E00B6D2C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF58D4BF1C34108300B6D2C0 /* KeyTests.swift in Sources */,
+				CF58D4C51C34108E00B6D2C0 /* IntervalTests.swift in Sources */,
+				CF58D4BC1C34108300B6D2C0 /* ChordFunctionTests.swift in Sources */,
+				CF58D4C71C34108E00B6D2C0 /* SeventhsKeyHarmonizerTests.swift in Sources */,
+				CF58D4BB1C34108300B6D2C0 /* ChordBuilderTests.swift in Sources */,
+				CF58D4C61C34108E00B6D2C0 /* NoteTests.swift in Sources */,
+				CF58D4C91C34108E00B6D2C0 /* TriadsKeyHarmonizerTests.swift in Sources */,
+				CF58D4BD1C34108300B6D2C0 /* ChordTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF58D4871C340F6E00B6D2C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF58D4791C340F6E00B6D2C0 /* Ellis */;
+			targetProxy = CF58D4861C340F6E00B6D2C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CF58D48C1C340F6E00B6D2C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CF58D48D1C340F6E00B6D2C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CF58D48F1C340F6E00B6D2C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Ellis/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pedromsantos.Ellis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF58D4901C340F6E00B6D2C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Ellis/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pedromsantos.Ellis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CF58D4921C340F6E00B6D2C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = EllisTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bytesteam.EllisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF58D4931C340F6E00B6D2C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = EllisTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bytesteam.EllisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF58D4741C340F6E00B6D2C0 /* Build configuration list for PBXProject "Ellis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF58D48C1C340F6E00B6D2C0 /* Debug */,
+				CF58D48D1C340F6E00B6D2C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF58D48E1C340F6E00B6D2C0 /* Build configuration list for PBXNativeTarget "Ellis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF58D48F1C340F6E00B6D2C0 /* Debug */,
+				CF58D4901C340F6E00B6D2C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF58D4911C340F6E00B6D2C0 /* Build configuration list for PBXNativeTarget "EllisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF58D4921C340F6E00B6D2C0 /* Debug */,
+				CF58D4931C340F6E00B6D2C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF58D4711C340F6E00B6D2C0 /* Project object */;
+}
