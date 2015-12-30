@@ -11,7 +11,7 @@ public struct NoteWithFunction
     
     public var closedChordNoteIndex:Int
     {
-            return self.function.closedChordNoteIndex
+        return self.function.closedChordNoteIndex
     }
 }
 
