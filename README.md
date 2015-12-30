@@ -188,7 +188,7 @@ let seventsHarmonizer = SeventhsKeyHarmonizer(key: Key.CMajor)
 | seventsHarmonizer.v().name  | "GDom7"   |
 | seventsHarmonizer.vi().name | "AMin7"   |
 | seventsHarmonizer.vii().name| "Bmin7b5" |
-
+#### Minor harmonizer
 ```swift
 let seventsHarmonizerMinor = SeventhsKeyHarmonizer(key: Key.AMinor)
 ```
