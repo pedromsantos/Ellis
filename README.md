@@ -8,15 +8,15 @@ These examples are taken from a [playground](EllisPlayground.playground/Contents
 
 ### Notes
 
-| Example                            | Output           |
-| ---------------------------------- | ---------------- |
-| Note.A.Name                        | "A"              |
-| Note.A.frequency()                 | 440              |
-| Note.A.frequency(Octave.TwoLine)   | 880              |
-| Note.A.flat()                      | AFlat            |
-| Note.A.sharp()                     | ASharp           |
-| Note.A == Note.A                   | true             |
-| Note.A == Note.C                   | false            |
+| Example                            | Output           | Comment                                                                       |
+| ---------------------------------- | ---------------- | ------------------------------------------------------------------------------|
+| Note.A.Name                        | "A"              |                                                                               |
+| Note.A.frequency()                 | 440              | Frequency defaults to [OneLine Octave](https://en.wikipedia.org/wiki/Octave)  |
+| Note.A.frequency(Octave.TwoLine)   | 880              | If required can pass octave for frequency                                     |
+| Note.A.flat()                      | AFlat            |                                                                               |
+| Note.A.sharp()                     | ASharp           |                                                                               |
+| Note.A == Note.A                   | true             |                                                                               |
+| Note.A == Note.C                   | false            |                                                                               |
 
 ### Intervals
 | Example                                | Output           |
@@ -38,11 +38,12 @@ These examples are taken from a [playground](EllisPlayground.playground/Contents
 | Key.AMinor.quality                       | Minor                              |
 | Key.CMajor.rootName                      | "C"                                |
 | Key.CMajor.degreeForNote(Note.A)         | 6                                  |
-| Key.CMajor.degreeForNote(Note.ASharp)    | Fix: thows error                   |
+| Key.CMajor.degreeForNote(Note.ASharp)    | Thows exception                    |
 | Key.CMajor.relativeKey                   | AMinor                             |
 | Key.CMajor.i()                           | C                                  |
 
 ### Chords
+#### Building chords
 ```swift
 let cmaj = ChordBuilder(root: Note.C)
                 .addMajorThird()
@@ -73,7 +74,7 @@ let cmaj7 = ChordBuilder(root: Note.C, chordFunction: ChordFunction.Major7)
 | cmaj7.noteByFunction(NoteFunction.Fifth) | G                                                |
 | cmaj7 == cmaj7                           | true                                             |
 | cmaj == cmaj7                            | false                                            |
-
+#### Transposing chords
 ```swift
 let gmaj7 = cmaj7.transpose(Note.G)
 ```
@@ -82,7 +83,7 @@ let gmaj7 = cmaj7.transpose(Note.G)
 | ------------ | ---------------- |
 | gmaj7.name   | "GMaj7"          |
 | gmaj7.notes  | [G, B, D, FSharp]|
-
+#### Inverting chords
 ```swift
 let firstInversion = cmaj7.invert()
 ```
@@ -108,14 +109,14 @@ let thirdInversion = secondInversion.invert()
 | -------------------------- | ---------------- |
 | thirdInversion.notes       | [B, C, E, G]     |
 | thirdInversion.Inversion   | Third            |
-
+#### Drop2 chords
 ```swift
 let drop2 = cmaj7.toDrop2()
 ```
 | Example      | Output           |
 | ------------ | ---------------- |
 | drop2.notes  | [C, G, B, E]     |
-
+#### Drop3 chords
 ```swift
 let drop3 = cmaj7.toDrop3()
 ```
@@ -123,7 +124,7 @@ let drop3 = cmaj7.toDrop3()
 | Example      | Output           |
 | ------------ | ---------------- |
 | drop3.notes  | [C, B, E, G]     |
-
+#### Voice leading chords
 ```swift
 let inversionWithFunctionInLead = cmaj7.voiceForLead(NoteFunction.Third)
 ```
@@ -160,6 +161,7 @@ let invertionWithLeadClosestToNote1 = cmaj7.invertionWithLeadClosestToNote(Note.
 | invertionWithLeadClosestToNote1.Inversion | Third                              |
 
 ### Key Harmonizers
+#### Triad harmonizer
 ```swift
 let triadHarmonizer = TriadsKeyHarmonizer(key: Key.CMajor)
 ```
@@ -173,7 +175,7 @@ let triadHarmonizer = TriadsKeyHarmonizer(key: Key.CMajor)
 | triadHarmonizer.v().name  | "GMaj" |
 | triadHarmonizer.vi().name | "AMin" |
 | triadHarmonizer.vii().name| "BDim" |
-
+#### Seventh harmonizer
 ```swift
 let seventsHarmonizer = SeventhsKeyHarmonizer(key: Key.CMajor)
 ```
