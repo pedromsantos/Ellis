@@ -36,6 +36,7 @@
 		CF8F5B831C34920B00087CE1 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B7A1C34920B00087CE1 /* Interval.swift */; settings = {ASSET_TAGS = (); }; };
 		CF8F5B841C34920B00087CE1 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B7B1C34920B00087CE1 /* Note.swift */; settings = {ASSET_TAGS = (); }; };
 		CF8F5B851C34920B00087CE1 /* Octave.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B7C1C34920B00087CE1 /* Octave.swift */; settings = {ASSET_TAGS = (); }; };
+		CF8F5B871C34938900087CE1 /* KeyHrmonizerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B861C34938900087CE1 /* KeyHrmonizerFactory.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		CF8F5B7A1C34920B00087CE1 /* Interval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interval.swift; sourceTree = "<group>"; };
 		CF8F5B7B1C34920B00087CE1 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		CF8F5B7C1C34920B00087CE1 /* Octave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Octave.swift; sourceTree = "<group>"; };
+		CF8F5B861C34938900087CE1 /* KeyHrmonizerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyHrmonizerFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 				CF8F5B751C34920B00087CE1 /* KeyQuality.swift */,
 				CF8F5B761C34920B00087CE1 /* SeventhsKeyHarmonizer.swift */,
 				CF8F5B771C34920B00087CE1 /* TriadsKeyHarmonizer.swift */,
+				CF8F5B861C34938900087CE1 /* KeyHrmonizerFactory.swift */,
 			);
 			path = Keys;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				CF8F5B711C34914A00087CE1 /* NoteWithFunction.swift in Sources */,
 				CF8F5B691C34908500087CE1 /* ChordInverter.swift in Sources */,
 				CF8F5B7D1C34920B00087CE1 /* Key.swift in Sources */,
+				CF8F5B871C34938900087CE1 /* KeyHrmonizerFactory.swift in Sources */,
 				CF8F5B671C34908500087CE1 /* ChordBuilder.swift in Sources */,
 				CF8F5B821C34920B00087CE1 /* Accident.swift in Sources */,
 				CF8F5B841C34920B00087CE1 /* Note.swift in Sources */,

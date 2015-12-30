@@ -116,7 +116,7 @@ triadHarmonizer.v().name
 triadHarmonizer.vi().name
 triadHarmonizer.vii().name
 
-let seventsHarmonizer = SeventhsKeyHarmonizer(key: Key.CMajor)
+let seventsHarmonizer = KeyHarmonizerFactory.Seventh.createHarmonizer(Key.CMajor)
 seventsHarmonizer.i().name
 seventsHarmonizer.ii().name
 seventsHarmonizer.iii().name
@@ -125,7 +125,7 @@ seventsHarmonizer.v().name
 seventsHarmonizer.vi().name
 seventsHarmonizer.vii().name
 
-let seventsHarmonizerMinor = SeventhsKeyHarmonizer(key: Key.AMinor)
+let seventsHarmonizerMinor = KeyHarmonizerFactory.Seventh.createHarmonizer(Key.AMinor)
 seventsHarmonizerMinor.i().name
 seventsHarmonizerMinor.ii().name
 seventsHarmonizerMinor.iii().name

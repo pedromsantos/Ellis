@@ -33,7 +33,7 @@ public class Chord: Equatable
     public var functions:[NoteFunction]
     {
         return chordNotes.map(
-                { (note: NoteWithFunction) -> NoteFunction in return note.function })
+            { (note: NoteWithFunction) -> NoteFunction in return note.function })
     }
     
     public var noteNames:[String]

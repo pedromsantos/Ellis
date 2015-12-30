@@ -31,7 +31,7 @@ public enum Key: Int
 
     private static let fifths =
         [Note.F, Note.C, Note.G, Note.D, Note.A, Note.E, Note.B]
-
+    
     private static let allValues =
     [
         (Relative: Key.FSharpMinor, Root: Note.A, Accidents: 3, Quality: KeyQuality.Major),
