@@ -24,17 +24,17 @@ public enum ChordShapeFactory: Int
         case Closed:
             return
                 ChordInverter(
-                    chordNotes: chord.ChordNotes,
+                    chordNotes: chord.notesWithFunctions,
                     inversion: chord.Inversion)
         case Drop2:
             return
                 Drop2Inverter(
-                    chordNotes: chord.ChordNotes,
+                    chordNotes: chord.notesWithFunctions,
                     inversion: chord.Inversion)
         case Drop3:
             return
                 Drop3Inverter(
-                    chordNotes: chord.ChordNotes,
+                    chordNotes: chord.notesWithFunctions,
                     inversion: chord.Inversion)
         }
     }

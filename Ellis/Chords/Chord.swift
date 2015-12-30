@@ -9,7 +9,7 @@ public class Chord: Equatable
         inversion:Inversions = .Root,
         inverterFactory:ChordShapeFactory = .Closed)
     {
-        chordNotes = notes
+        self.chordNotes = notes
         self.inversion = inversion
         self.inverterFactory = inverterFactory
     }
@@ -19,7 +19,7 @@ public class Chord: Equatable
         return inverterFactory
     }
     
-    public var ChordNotes:[NoteWithFunction]
+    public var notesWithFunctions:[NoteWithFunction]
     {
         return chordNotes
     }
