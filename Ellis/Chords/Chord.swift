@@ -99,7 +99,7 @@ public class Chord: Equatable
     
     public func toDrop2() -> Chord
     {
-        var drop2ChordNotes = swapedChordNotes(0, secondNoteIndex: 1)
+        var drop2ChordNotes = swapChordNotes(0, secondNoteIndex: 1)
         let first = drop2ChordNotes.removeAtIndex(0)
         drop2ChordNotes.append(first)
         
@@ -111,10 +111,10 @@ public class Chord: Equatable
     
     public func toDrop3() -> Chord
     {
-        let chord = toDrop2().toDrop2()
+        let drop3ChordNotes = toDrop2().toDrop2().chordNotes
         
         return Chord(
-            notes: chord.chordNotes,
+            notes: drop3ChordNotes,
             inversion: .Root,
             inverterFactory:.Drop3)
     }
@@ -222,7 +222,7 @@ public class Chord: Equatable
         return chordNotes.last!
     }
     
-    private func swapedChordNotes(
+    private func swapChordNotes(
         firstNoteIndex: Int,
         secondNoteIndex: Int) -> [NoteWithFunction]
     {
@@ -251,7 +251,7 @@ public class Chord: Equatable
         return intervals
     }
     
-    public func equalTo(otherChord: Chord) -> Bool
+    internal func equalTo(otherChord: Chord) -> Bool
     {
         if self.chordNotes.count != otherChord.chordNotes.count
         {
