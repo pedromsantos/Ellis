@@ -2,6 +2,10 @@
 
 Ellis is named after Jazz Guitarrist [Herb Ellis](https://en.wikipedia.org/wiki/Herb_Ellis)
 
+## Usages
+
+Ellis is currently used on [LetsComp](https://itunes.apple.com/us/app/letscomp/id984916129?ls=1&mt=8)
+
 ## Examples
 
 These examples are taken from a [playground](EllisPlayground.playground/Contents.swift) in the project 
