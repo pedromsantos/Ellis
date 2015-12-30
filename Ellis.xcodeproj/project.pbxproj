@@ -31,6 +31,11 @@
 		CF58D4C61C34108E00B6D2C0 /* NoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4C11C34108E00B6D2C0 /* NoteTests.swift */; settings = {ASSET_TAGS = (); }; };
 		CF58D4C71C34108E00B6D2C0 /* SeventhsKeyHarmonizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4C21C34108E00B6D2C0 /* SeventhsKeyHarmonizerTests.swift */; settings = {ASSET_TAGS = (); }; };
 		CF58D4C91C34108E00B6D2C0 /* TriadsKeyHarmonizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4C41C34108E00B6D2C0 /* TriadsKeyHarmonizerTests.swift */; settings = {ASSET_TAGS = (); }; };
+		CF8F5B3A1C348AE900087CE1 /* Inversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B391C348AE900087CE1 /* Inversions.swift */; settings = {ASSET_TAGS = (); }; };
+		CF8F5B3C1C348B1A00087CE1 /* ChordInverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B3B1C348B1A00087CE1 /* ChordInverter.swift */; settings = {ASSET_TAGS = (); }; };
+		CF8F5B3E1C348B4000087CE1 /* Drop2Inverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B3D1C348B4000087CE1 /* Drop2Inverter.swift */; settings = {ASSET_TAGS = (); }; };
+		CF8F5B401C348B5E00087CE1 /* Drop3Inverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B3F1C348B5E00087CE1 /* Drop3Inverter.swift */; settings = {ASSET_TAGS = (); }; };
+		CF8F5B421C348B8E00087CE1 /* ChordShapeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B411C348B8E00087CE1 /* ChordShapeFactory.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +76,11 @@
 		CF58D4C11C34108E00B6D2C0 /* NoteTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTests.swift; sourceTree = "<group>"; };
 		CF58D4C21C34108E00B6D2C0 /* SeventhsKeyHarmonizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeventhsKeyHarmonizerTests.swift; sourceTree = "<group>"; };
 		CF58D4C41C34108E00B6D2C0 /* TriadsKeyHarmonizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriadsKeyHarmonizerTests.swift; sourceTree = "<group>"; };
+		CF8F5B391C348AE900087CE1 /* Inversions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inversions.swift; sourceTree = "<group>"; };
+		CF8F5B3B1C348B1A00087CE1 /* ChordInverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordInverter.swift; sourceTree = "<group>"; };
+		CF8F5B3D1C348B4000087CE1 /* Drop2Inverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drop2Inverter.swift; sourceTree = "<group>"; };
+		CF8F5B3F1C348B5E00087CE1 /* Drop3Inverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drop3Inverter.swift; sourceTree = "<group>"; };
+		CF8F5B411C348B8E00087CE1 /* ChordShapeFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordShapeFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +139,11 @@
 				CF58D4A41C34106300B6D2C0 /* TriadsKeyHarmonizer.swift */,
 				CF58D47D1C340F6E00B6D2C0 /* Ellis.h */,
 				CF58D47F1C340F6E00B6D2C0 /* Info.plist */,
+				CF8F5B391C348AE900087CE1 /* Inversions.swift */,
+				CF8F5B3B1C348B1A00087CE1 /* ChordInverter.swift */,
+				CF8F5B3D1C348B4000087CE1 /* Drop2Inverter.swift */,
+				CF8F5B3F1C348B5E00087CE1 /* Drop3Inverter.swift */,
+				CF8F5B411C348B8E00087CE1 /* ChordShapeFactory.swift */,
 			);
 			path = Ellis;
 			sourceTree = "<group>";
@@ -258,8 +273,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF58D4AB1C34106300B6D2C0 /* Key.swift in Sources */,
+				CF8F5B421C348B8E00087CE1 /* ChordShapeFactory.swift in Sources */,
+				CF8F5B401C348B5E00087CE1 /* Drop3Inverter.swift in Sources */,
 				CF58D4A61C34106300B6D2C0 /* Chord.swift in Sources */,
 				CF58D4A91C34106300B6D2C0 /* ChordFunction.swift in Sources */,
+				CF8F5B3A1C348AE900087CE1 /* Inversions.swift in Sources */,
 				CF58D4AD1C34106300B6D2C0 /* KeyQuality.swift in Sources */,
 				CF58D4AF1C34106300B6D2C0 /* NoteFunction.swift in Sources */,
 				CF58D4B51C34106300B6D2C0 /* TriadsKeyHarmonizer.swift in Sources */,
@@ -269,7 +287,9 @@
 				CF58D4B21C34106300B6D2C0 /* SeventhsKeyHarmonizer.swift in Sources */,
 				CF58D4A71C34106300B6D2C0 /* ChordBuilder.swift in Sources */,
 				CF58D4B11C34106300B6D2C0 /* Octave.swift in Sources */,
+				CF8F5B3C1C348B1A00087CE1 /* ChordInverter.swift in Sources */,
 				CF58D4AC1C34106300B6D2C0 /* KeyHarmonizer.swift in Sources */,
+				CF8F5B3E1C348B4000087CE1 /* Drop2Inverter.swift in Sources */,
 				CF58D4A51C34106300B6D2C0 /* Accident.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
