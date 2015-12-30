@@ -177,27 +177,27 @@ let triadHarmonizer = TriadsKeyHarmonizer(key: Key.CMajor)
 | triadHarmonizer.vii().name| "BDim" |
 #### Seventh harmonizer
 ```swift
-let seventsHarmonizer = SeventhsKeyHarmonizer(key: Key.CMajor)
+let seventhsHarmonizer = SeventhsKeyHarmonizer(key: Key.CMajor)
 ```
-| Example                     | Output    |
-| --------------------------- | --------- |
-| seventsHarmonizer.i().name  | "CMaj7"   |
-| seventsHarmonizer.ii().name | "DMin7"   |
-| seventsHarmonizer.iii().name| "EMin7"   |
-| seventsHarmonizer.iv().name | "FMaj7"   |
-| seventsHarmonizer.v().name  | "GDom7"   |
-| seventsHarmonizer.vi().name | "AMin7"   |
-| seventsHarmonizer.vii().name| "Bmin7b5" |
+| Example                      | Output    |
+| ---------------------------- | --------- |
+| seventhsHarmonizer.i().name  | "CMaj7"   |
+| seventhsHarmonizer.ii().name | "DMin7"   |
+| seventhsHarmonizer.iii().name| "EMin7"   |
+| seventhsHarmonizer.iv().name | "FMaj7"   |
+| seventhsHarmonizer.v().name  | "GDom7"   |
+| seventhsHarmonizer.vi().name | "AMin7"   |
+| seventhsHarmonizer.vii().name| "Bmin7b5" |
 #### Minor harmonizer
 ```swift
-let seventsHarmonizerMinor = SeventhsKeyHarmonizer(key: Key.AMinor)
+let seventhsHarmonizerMinor = SeventhsKeyHarmonizer(key: Key.AMinor)
 ```
 | Example                          | Output     |
 | -------------------------------- | ---------- |
-| seventsHarmonizerMinor.i().name  | "AMinMaj7" |
-| seventsHarmonizerMinor.ii().name | "BMin7b5"  |
-| seventsHarmonizerMinor.iii().name| "CAug7"    |
-| seventsHarmonizerMinor.iv().name | "DMin7"    |
-| seventsHarmonizerMinor.v().name  | "EDom7"    |
-| seventsHarmonizerMinor.vi().name | "FMaj7"    |
-| seventsHarmonizerMinor.vii().name| "G#Dim7"   |
+| seventhsHarmonizerMinor.i().name  | "AMinMaj7" |
+| seventhsHarmonizerMinor.ii().name | "BMin7b5"  |
+| seventhsHarmonizerMinor.iii().name| "CAug7"    |
+| seventhsHarmonizerMinor.iv().name | "DMin7"    |
+| seventhsHarmonizerMinor.v().name  | "EDom7"    |
+| seventhsHarmonizerMinor.vi().name | "FMaj7"    |
+| seventhsHarmonizerMinor.vii().name| "G#Dim7"   |
