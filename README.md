@@ -1,5 +1,4 @@
-# Ellis
-##Swift music library
+# Ellis - Swift music library
 
 Ellis is named after Jazz Guitarrist [Herb Ellis](https://en.wikipedia.org/wiki/Herb_Ellis)
 
