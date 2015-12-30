@@ -54,7 +54,7 @@ cmaj7.name
 cmaj7.noteNames
 cmaj7.functions
 cmaj7.noteFunctionNames
-cmaj7.ChordNotes
+cmaj7.notes
 cmaj7.Inversion
 
 cmaj7.bass
