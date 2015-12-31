@@ -37,6 +37,21 @@ Key.CMajor.degreeForNote(Note.A)
 Key.CMajor.relativeKey
 Key.CMajor.i()
 
+Key.CMajor.keyNotes
+Key.GMajor.keyNotes
+Key.DMajor.keyNotes
+Key.AMajor.keyNotes
+Key.EMajor.keyNotes
+Key.BMajor.keyNotes
+Key.GFlatMajor.keyNotes
+Key.DFlatMajor.keyNotes
+Key.AFlatMajor.keyNotes
+Key.EFlatMajor.keyNotes
+Key.BFlatMajor.keyNotes
+Key.FMajor.keyNotes
+Key.FSharpMajor.keyNotes
+Key.CSharpMajor.keyNotes
+
 
 // Chords
 let cmaj = ChordBuilder(root: Note.C)
