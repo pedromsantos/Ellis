@@ -2,6 +2,7 @@
 
 [![Pod Version](https://img.shields.io/cocoapods/v/Ellis.svg?style=flat)](http://cocoadocs.org/docsets/Ellis/)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+![](http://travis-ci.org/pedromsantos/Ellis.svg?branch=master)
 
 Ellis is named after Jazz Guitarrist [Herb Ellis](https://en.wikipedia.org/wiki/Herb_Ellis)
 
