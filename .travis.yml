@@ -5,9 +5,8 @@ branches:
  - master
 
 xcode_workspace: Ellis.xcworkspace
-xcode_scheme: EllisTests
 osx_image: xcode6.4
 xcode_sdk: iphonesimulator8.4
 
-script:
-- xcodebuild clean build test -project Ellis.xcodeproj -scheme EllisTests
+#script:
+#- xcodebuild clean build test -project Ellis.xcodeproj -scheme EllisTests
