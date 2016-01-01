@@ -1,10 +1,6 @@
 language: objective-c
+before_install:
+    - brew update
+    - brew install xctool
 
-branches:
- only:
- - master
-
-xcode_workspace: Ellis.xcworkspace
-xcode_scheme: Ellis
-osx_image: xcode6.4
-xcode_sdk: iphonesimulator8.4
+xctool -workspace Ellis.xcworkspace -scheme Ellis test -sdk iphonesimulator
