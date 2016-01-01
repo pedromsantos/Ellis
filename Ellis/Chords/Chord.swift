@@ -251,7 +251,7 @@ public class Chord: Equatable
         return intervals
     }
     
-    internal func equalTo(otherChord: Chord) -> Bool
+    public func equalTo(otherChord: Chord) -> Bool
     {
         if self.chordNotes.count != otherChord.chordNotes.count
         {

@@ -67,5 +67,15 @@ class IntervalTests: XCTestCase
     {
         XCTAssertEqual(Interval.PerfectOctave, Interval.createIntervalFromDistance(12), "")
     }
+    
+    func testThatItSubtractingAMinorSecondFromAnOctaveIsAMajorSeventh()
+    {
+        XCTAssertEqual(Interval.PerfectOctave - Interval.MinorSecond, Interval.MajorSeventh.rawValue, "")
+    }
+    
+    func testThatOctaveIsGreaterThamMajorSeventh()
+    {
+        XCTAssertTrue(Interval.PerfectOctave > Interval.MajorSeventh, "")
+    }
 }
 
