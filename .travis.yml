@@ -3,4 +3,4 @@ before_install:
     - brew update
     - brew install xctool
 
-xctool -workspace Ellis.xcworkspace -scheme Ellis test -sdk iphonesimulator
+script: xctool -workspace Ellis.xcworkspace -scheme Ellis test -sdk iphonesimulator
