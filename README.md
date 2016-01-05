@@ -58,7 +58,6 @@ let cmaj = ChordBuilder(root: Note.C)
                 .addPerfectFifth()
                 .build()
 ```
-
 | Example                                  | Output                             |
 | ---------------------------------------- | ---------------------------------- |
 | cmaj.name                                | "CMaj"                             |
@@ -86,7 +85,6 @@ let cmaj7 = ChordBuilder(root: Note.C, chordFunction: ChordFunction.Major7)
 ```swift
 let gmaj7 = cmaj7.transpose(Note.G)
 ```
-
 | Example      | Output           |
 | ------------ | ---------------- |
 | gmaj7.name   | "GMaj7"          |
@@ -103,7 +101,6 @@ let firstInversion = cmaj7.invert()
 ```swift
 let secondInversion = firstInversion.invert()
 ```
-
 | Example                    | Output           |
 | -------------------------- | ---------------- |
 | secondInversion.notes      | [G, B, C, E]     |
@@ -112,7 +109,6 @@ let secondInversion = firstInversion.invert()
 ```swift
 let thirdInversion = secondInversion.invert()
 ```
-
 | Example                    | Output           |
 | -------------------------- | ---------------- |
 | thirdInversion.notes       | [B, C, E, G]     |
@@ -128,7 +124,6 @@ let drop2 = cmaj7.toDrop2()
 ```swift
 let drop3 = cmaj7.toDrop3()
 ```
-
 | Example      | Output           |
 | ------------ | ---------------- |
 | drop3.notes  | [C, B, E, G]     |
@@ -136,7 +131,6 @@ let drop3 = cmaj7.toDrop3()
 ```swift
 let inversionWithFunctionInLead = cmaj7.voiceForLead(NoteFunction.Third)
 ```
-
 | Example                                   | Output                             |
 | ----------------------------------------- | ---------------------------------- |
 | inversionWithFunctionInLead.notes         | [G, B, C, E]                       |
@@ -145,7 +139,6 @@ let inversionWithFunctionInLead = cmaj7.voiceForLead(NoteFunction.Third)
 ```swift
 let inversionWithFunctionInBass = cmaj7.voiceForBass(NoteFunction.Third)
 ```
-
 | Example                                   | Output                             |
 | ----------------------------------------- | ---------------------------------- |
 | inversionWithFunctionInBass.notes         | [E, G, B, C]                       |
@@ -154,7 +147,6 @@ let inversionWithFunctionInBass = cmaj7.voiceForBass(NoteFunction.Third)
 ```swift
 let invertionWithLeadClosestToNote = cmaj7.invertionWithLeadClosestToNote(Note.F)
 ```
-
 | Example                                   | Output                             |
 | ----------------------------------------- | ---------------------------------- |
 | invertionWithLeadClosestToNote.notes      | [G, B, C, E]                       |
@@ -173,7 +165,6 @@ let invertionWithLeadClosestToNote1 = cmaj7.invertionWithLeadClosestToNote(Note.
 ```swift
 let triadHarmonizer = TriadsKeyHarmonizer(key: Key.CMajor)
 ```
-
 | Example                   | Output |
 | ------------------------- | ------ |
 | triadHarmonizer.i().name  | "CMaj" |
@@ -197,6 +188,7 @@ let seventhsHarmonizer = SeventhsKeyHarmonizer(key: Key.CMajor)
 | seventhsHarmonizer.vi().name | "AMin7"   |
 | seventhsHarmonizer.vii().name| "Bmin7b5" |
 #### Minor harmonizer
+Scale is a melodic minor but when harmonizing its treated as a harmonic minor.
 ```swift
 let seventhsHarmonizerMinor = SeventhsKeyHarmonizer(key: Key.AMinor)
 ```
