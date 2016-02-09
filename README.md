@@ -1,5 +1,7 @@
 # Ellis - Swift music library
 
+[![Join the chat at https://gitter.im/pedromsantos/Ellis](https://badges.gitter.im/pedromsantos/Ellis.svg)](https://gitter.im/pedromsantos/Ellis?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Pod Version](https://img.shields.io/cocoapods/v/Ellis.svg?style=flat)](http://cocoadocs.org/docsets/Ellis/)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 ![](http://travis-ci.org/pedromsantos/Ellis.svg?branch=master)
