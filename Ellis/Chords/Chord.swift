@@ -258,7 +258,7 @@ public class Chord: Equatable
             return false
         }
         
-        for var i = 0; i < self.chordNotes.count; i++
+        for i in 0 ..< self.chordNotes.count
         {
             if !(self.chordNotes[i] == otherChord.chordNotes[i])
             {

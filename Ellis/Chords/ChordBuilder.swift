@@ -20,7 +20,7 @@ public class ChordBuilder
             addNoteWithInterval(
                 interval,
                 function: NoteFunction(rawValue: functionIndex)!)
-            functionIndex++
+            functionIndex += 1
         }
     }
 

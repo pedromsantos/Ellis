@@ -151,7 +151,7 @@ public enum Key: Int
         var keyNotes = Array(Key.fifths.reverse())
         let max = (-1) * accidents
 
-        for var i = 0; i < max; i++
+        for i in 0 ..< max
         {
             keyNotes[i] = keyNotes[i].flat()
         }
@@ -164,7 +164,7 @@ public enum Key: Int
         var keyNotes = Key.fifths
         let max = accidents
 
-        for var i = 0; i < max; i++
+        for i in 0 ..< max
         {
             keyNotes[i] = keyNotes[i].sharp()
         }
