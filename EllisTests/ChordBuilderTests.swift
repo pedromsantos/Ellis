@@ -101,7 +101,7 @@ class ChordBuilderTests: XCTestCase
         for interval in intervals
         {
             builder.addNoteWithInterval(interval, function: NoteFunction(rawValue: noteFunctionIndex)!)
-            noteFunctionIndex++
+            noteFunctionIndex += 1
         }
 
         let chord = builder.build()
@@ -122,7 +122,7 @@ class ChordBuilderTests: XCTestCase
 
     func assertNotesSameAsExpectedNotes(expectedNotes: [Note], actualNotes: [Note])
     {
-        for var i = 0; i < actualNotes.count; i++
+        for i in 0 ..< actualNotes.count
         {
             let expectedNote: Note = expectedNotes[i]
             let actualNote: Note = actualNotes[i]

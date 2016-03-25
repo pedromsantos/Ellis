@@ -529,7 +529,7 @@ class ChordTests: XCTestCase
         for note: Note in notes
         {
             chordNotes.append(NoteWithFunction(note: note, function: NoteFunction(rawValue: i)!));
-            i++;
+            i += 1;
         }
 
         return Chord(notes: chordNotes);
