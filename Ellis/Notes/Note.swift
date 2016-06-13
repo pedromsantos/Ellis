@@ -1,42 +1,42 @@
 public enum Note: Int
 {
-    case C = 0
-    case CSharp
-    case DFlat
-    case D
-    case DSharp
-    case EFlat
-    case E
-    case F
-    case FSharp
-    case GFlat
-    case G
-    case GSharp
-    case AFlat
-    case A
-    case ASharp
-    case BFlat
-    case B
+    case c = 0
+    case cSharp
+    case dFlat
+    case d
+    case dSharp
+    case eFlat
+    case e
+    case f
+    case fSharp
+    case gFlat
+    case g
+    case gSharp
+    case aFlat
+    case a
+    case aSharp
+    case bFlat
+    case b
 
     private static let allValues =
     [
-        (Pitch: 0, Name: "C", Accident: Accident.None),
-        (Pitch: 1, Name: "C#", Accident: Accident.Sharp),
-        (Pitch: 1, Name: "Db", Accident: Accident.Flat),
-        (Pitch: 2, Name: "D", Accident: Accident.None),
-        (Pitch: 3, Name: "D#", Accident: Accident.Sharp),
-        (Pitch: 3, Name: "Eb", Accident: Accident.Flat),
-        (Pitch: 4, Name: "E", Accident: Accident.None),
-        (Pitch: 5, Name: "F", Accident: Accident.None),
-        (Pitch: 6, Name: "F#", Accident: Accident.Sharp),
-        (Pitch: 6, Name: "Gb", Accident: Accident.Flat),
-        (Pitch: 7, Name: "G", Accident: Accident.None),
-        (Pitch: 8, Name: "G#", Accident: Accident.Sharp),
-        (Pitch: 8, Name: "Ab", Accident: Accident.Flat),
-        (Pitch: 9, Name: "A", Accident: Accident.None),
-        (Pitch: 10, Name: "A#", Accident: Accident.Sharp),
-        (Pitch: 10, Name: "Bb", Accident: Accident.Flat),
-        (Pitch: 11, Name: "B", Accident: Accident.None)
+        (Pitch: 0, Name: "C", Accident: Accident.none),
+        (Pitch: 1, Name: "C#", Accident: Accident.sharp),
+        (Pitch: 1, Name: "Db", Accident: Accident.flat),
+        (Pitch: 2, Name: "D", Accident: Accident.none),
+        (Pitch: 3, Name: "D#", Accident: Accident.sharp),
+        (Pitch: 3, Name: "Eb", Accident: Accident.flat),
+        (Pitch: 4, Name: "E", Accident: Accident.none),
+        (Pitch: 5, Name: "F", Accident: Accident.none),
+        (Pitch: 6, Name: "F#", Accident: Accident.sharp),
+        (Pitch: 6, Name: "Gb", Accident: Accident.flat),
+        (Pitch: 7, Name: "G", Accident: Accident.none),
+        (Pitch: 8, Name: "G#", Accident: Accident.sharp),
+        (Pitch: 8, Name: "Ab", Accident: Accident.flat),
+        (Pitch: 9, Name: "A", Accident: Accident.none),
+        (Pitch: 10, Name: "A#", Accident: Accident.sharp),
+        (Pitch: 10, Name: "Bb", Accident: Accident.flat),
+        (Pitch: 11, Name: "B", Accident: Accident.none)
     ]
 
     public var Pitch: Int
@@ -51,31 +51,31 @@ public enum Note: Int
 
     public func sharp() -> Note
     {
-        return accidentedNote(Accident.Sharp)
+        return accidentedNote(Accident.sharp)
     }
 
     public func flat() -> Note
     {
-        return accidentedNote(Accident.Flat)
+        return accidentedNote(Accident.flat)
     }
 
-    public func intervalWithNote(other: Note) -> Interval
+    public func intervalWithNote(_ other: Note) -> Interval
     {
         let distance = measureAbsoluteSemitones(other)
 
         return Interval.createIntervalFromDistance(distance)
     }
 
-    public func measureAbsoluteSemitones(other: Note) -> Int
+    public func measureAbsoluteSemitones(_ other: Note) -> Int
     {
         let distance = other - self
 
         return distance < 0 ? 12 - (distance * (-1)) : distance;
     }
 
-    public func transpose(transposingInterval: Interval) -> Note
+    public func transpose(_ transposingInterval: Interval) -> Note
     {
-        var interval = Interval.Unisson;
+        var interval = Interval.unisson;
         var resultingNote = self;
 
         while(interval != transposingInterval)
@@ -90,38 +90,38 @@ public enum Note: Int
         return resultingNote;
     }
 
-    public func frequency(octave: Octave = .OneLine) -> Double
+    public func frequency(_ octave: Octave = .oneLine) -> Double
     {
         let octaveRange = 12.0
         let a4Frequency = 440.0
-        let power = Double(Pitch - Note.A.Pitch) / octaveRange
+        let power = Double(Pitch - Note.a.Pitch) / octaveRange
         let frequency = pow(2.0, power) * a4Frequency
         return octave.adjustFrequencyForOctave(frequency)
     }
 
-    private func accidentedNote(accident: Accident) -> Note
+    private func accidentedNote(_ accident: Accident) -> Note
     {
         let accidentedNoteIndex = self.rawValue + accidentedNoteDistance(accident)
 
         if accidentedNoteIndex < 0
         {
-            return .B
+            return .b
         }
 
         if accidentedNoteIndex > 16
         {
-            return .C
+            return .c
         }
 
         return Note(rawValue: accidentedNoteIndex)!
     }
 
-    private func accidentedNoteDistance(accident: Accident) -> Int
+    private func accidentedNoteDistance(_ accident: Accident) -> Int
     {
         return accident.direction() * accidentedNoteAbsoluteDistance(accident)
     }
 
-    private func accidentedNoteAbsoluteDistance(accident: Accident) -> Int
+    private func accidentedNoteAbsoluteDistance(_ accident: Accident) -> Int
     {
         return self.accident == accident ? 2 : 1
     }

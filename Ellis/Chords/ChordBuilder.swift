@@ -6,7 +6,7 @@ public class ChordBuilder
     public init(root: Note)
     {
         notes = [NoteWithFunction]()
-        self.root = NoteWithFunction(note: root, function: NoteFunction.Root)
+        self.root = NoteWithFunction(note: root, function: NoteFunction.root)
         notes.append(self.root)
     }
 
@@ -17,7 +17,7 @@ public class ChordBuilder
 
         for interval in chordFunction.Intervals
         {
-            addNoteWithInterval(
+            let _ = addNoteWithInterval(
                 interval,
                 function: NoteFunction(rawValue: functionIndex)!)
             functionIndex += 1
@@ -30,7 +30,7 @@ public class ChordBuilder
     }
 
     public func addNoteWithInterval(
-        interval: Interval,
+        _ interval: Interval,
         function: NoteFunction) -> ChordBuilder
     {
         let note = createNoteWithDistanceFromRoot(interval)
@@ -39,75 +39,75 @@ public class ChordBuilder
         return self
     }
 
-    public func addThird(note: Note) -> ChordBuilder
+    public func addThird(_ note: Note) -> ChordBuilder
     {
-        notes.append(NoteWithFunction(note: note, function: NoteFunction.Third))
+        notes.append(NoteWithFunction(note: note, function: NoteFunction.third))
         return self
     }
 
     public func addMajorThird() -> ChordBuilder
     {
-        let note = createNoteWithDistanceFromRoot(Interval.MajorThird)
-        addThird(note)
+        let note = createNoteWithDistanceFromRoot(Interval.majorThird)
+        let _ = addThird(note)
         return self
     }
 
     public func addMinorThird() -> ChordBuilder
     {
-        let note = createNoteWithDistanceFromRoot(Interval.MajorThird)
-        addThird(note.flat())
+        let note = createNoteWithDistanceFromRoot(Interval.majorThird)
+        let _ = addThird(note.flat())
         return self
     }
 
-    public func addFifth(note: Note) -> ChordBuilder
+    public func addFifth(_ note: Note) -> ChordBuilder
     {
-        notes.append(NoteWithFunction(note: note, function: NoteFunction.Fifth))
+        notes.append(NoteWithFunction(note: note, function: NoteFunction.fifth))
         return self
     }
 
     public func addPerfectFifth() -> ChordBuilder
     {
-        let note = createNoteWithDistanceFromRoot(Interval.PerfectFifth)
-        addFifth(note)
+        let note = createNoteWithDistanceFromRoot(Interval.perfectFifth)
+        let _ = addFifth(note)
         return self
     }
 
     public func addDiminishedFifth() -> ChordBuilder
     {
-        let note = createNoteWithDistanceFromRoot(Interval.PerfectFifth)
-        addFifth(note.flat())
+        let note = createNoteWithDistanceFromRoot(Interval.perfectFifth)
+        let _ = addFifth(note.flat())
         return self
     }
 
-    public func addSeventh(note: Note) -> ChordBuilder
+    public func addSeventh(_ note: Note) -> ChordBuilder
     {
         notes.append(
-            NoteWithFunction(note: note, function: NoteFunction.Seventh))
+            NoteWithFunction(note: note, function: NoteFunction.seventh))
         return self
     }
 
     public func addMajorSeventh() -> ChordBuilder
     {
-        let note = createNoteWithDistanceFromRoot(Interval.MajorSeventh)
-        addSeventh(note)
+        let note = createNoteWithDistanceFromRoot(Interval.majorSeventh)
+        let _ = addSeventh(note)
         return self
     }
 
     public func addMinorSeventh() -> ChordBuilder
     {
-        let note = createNoteWithDistanceFromRoot(Interval.MajorSeventh)
-        addSeventh(note.flat())
+        let note = createNoteWithDistanceFromRoot(Interval.majorSeventh)
+        let _ = addSeventh(note.flat())
         return self
     }
 
     public func addDiminishedSeventh() -> ChordBuilder
     {
-        let note = createNoteWithDistanceFromRoot(Interval.MajorSeventh)
-        addSeventh(note.flat().flat())
+        let note = createNoteWithDistanceFromRoot(Interval.majorSeventh)
+        let _ = addSeventh(note.flat().flat())
         return self
     }
 
-    private func createNoteWithDistanceFromRoot(distance: Interval) -> Note
+    private func createNoteWithDistanceFromRoot(_ distance: Interval) -> Note
     {
         return root.note.transpose(distance)
     }

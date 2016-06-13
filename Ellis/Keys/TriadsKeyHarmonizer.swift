@@ -35,7 +35,7 @@ public class TriadsKeyHarmonizer: KeyHarmonizer
         return buildChord(key.vii(), third: key.ii(), fifth: key.iv());
     }
 
-    private func buildChord(root: Note, third: Note, fifth: Note) -> Chord
+    private func buildChord(_ root: Note, third: Note, fifth: Note) -> Chord
     {
         return ChordBuilder(root: root)
         .addThird(third)

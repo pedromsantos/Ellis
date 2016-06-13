@@ -64,7 +64,7 @@ public class SeventhsKeyHarmonizer: KeyHarmonizer
     }
 
     private func buildChord(
-        root: Note,
+        _ root: Note,
         third: Note,
         fifth: Note,
         seventh: Note) -> Chord

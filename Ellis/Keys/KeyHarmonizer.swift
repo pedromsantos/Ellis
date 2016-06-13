@@ -20,12 +20,12 @@ public class KeyHarmonizer
         ]
     }
 
-    public func chordForScaleDegree(scaleDegree: Int) -> Chord
+    public func chordForScaleDegree(_ scaleDegree: Int) -> Chord
     {
         return Chords[scaleDegree]
     }
 
-    public func updateKey(key: Key)
+    public func updateKey(_ key: Key)
     {
         self.key = key
     }

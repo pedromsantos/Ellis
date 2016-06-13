@@ -13,15 +13,15 @@ class Drop3Inverter: ChordInverter
         return Chord(
             notes: chordNotes,
             inversion:inversion,
-            inverterFactory: .Drop3)
+            inverterFactory: .drop3)
     }
     
     override func resetInvertions() -> Chord
     {
-        return Chord(notes: chordNotes, inversion:.Root).toClosed().toDrop3()
+        return Chord(notes: chordNotes, inversion:.root).toClosed().toDrop3()
     }
     
-    private func swapChordNotes(firstNoteIndex: Int, secondNoteIndex: Int)
+    private func swapChordNotes(_ firstNoteIndex: Int, secondNoteIndex: Int)
     {
         let first = chordNotes[firstNoteIndex]
         chordNotes[firstNoteIndex] = chordNotes[secondNoteIndex]

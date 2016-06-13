@@ -5,67 +5,67 @@ class KeyTests: XCTestCase
 {
     func test_that_c_major_returns_correct_notes_for_key()
     {
-        let expectedNotes = [Note.C, Note.D, Note.E, Note.F, Note.G, Note.A, Note.B]
+        let expectedNotes = [Note.c, Note.d, Note.e, Note.f, Note.g, Note.a, Note.b]
 
-        XCTAssertEqual(Key.CMajor.keyNotes, expectedNotes)
+        XCTAssertEqual(Key.cMajor.keyNotes, expectedNotes)
     }
 
     func test_that_a_minor_returns_correct_notes_for_key()
     {
-        let expectedNotes = [Note.A, Note.B, Note.C, Note.D, Note.E, Note.F, Note.G]
+        let expectedNotes = [Note.a, Note.b, Note.c, Note.d, Note.e, Note.f, Note.g]
 
-        XCTAssertEqual(Key.AMinor.keyNotes, expectedNotes)
+        XCTAssertEqual(Key.aMinor.keyNotes, expectedNotes)
     }
 
     func test_that_a_flat_major_returns_correct_notes_for_key()
     {
-        let expectedNotes = [Note.AFlat, Note.BFlat, Note.C, Note.DFlat, Note.EFlat, Note.F, Note.G]
+        let expectedNotes = [Note.aFlat, Note.bFlat, Note.c, Note.dFlat, Note.eFlat, Note.f, Note.g]
 
-        XCTAssertEqual(Key.AFlatMajor.keyNotes, expectedNotes)
+        XCTAssertEqual(Key.aFlatMajor.keyNotes, expectedNotes)
     }
 
     func test_that_g_flat_major_returns_correct_notes_for_key()
     {
-        let expectedNotes = [Note.GFlat, Note.AFlat, Note.BFlat, Note.B, Note.DFlat, Note.EFlat, Note.F]
+        let expectedNotes = [Note.gFlat, Note.aFlat, Note.bFlat, Note.b, Note.dFlat, Note.eFlat, Note.f]
 
-        XCTAssertEqual(Key.GFlatMajor.keyNotes, expectedNotes)
+        XCTAssertEqual(Key.gFlatMajor.keyNotes, expectedNotes)
     }
 
     func test_that_e_flat_minor_returns_correct_notes_for_key()
     {
-        let expectedNotes = [Note.EFlat, Note.F, Note.GFlat, Note.AFlat, Note.BFlat, Note.B, Note.DFlat]
+        let expectedNotes = [Note.eFlat, Note.f, Note.gFlat, Note.aFlat, Note.bFlat, Note.b, Note.dFlat]
 
-        XCTAssertEqual(Key.EFlatMinor.keyNotes, expectedNotes)
+        XCTAssertEqual(Key.eFlatMinor.keyNotes, expectedNotes)
     }
 
     func test_that_a_major_returns_correct_notes_for_key()
     {
-        let expectedNotes = [Note.A, Note.B, Note.CSharp, Note.D, Note.E, Note.FSharp, Note.GSharp]
+        let expectedNotes = [Note.a, Note.b, Note.cSharp, Note.d, Note.e, Note.fSharp, Note.gSharp]
 
-        XCTAssertEqual(Key.AMajor.keyNotes, expectedNotes)
+        XCTAssertEqual(Key.aMajor.keyNotes, expectedNotes)
     }
 
     func test_that_c_major_relative_minor_returns_correct_notes_for_key()
     {
-        let expectedNotes = [Note.A, Note.B, Note.C, Note.D, Note.E, Note.F, Note.G]
+        let expectedNotes = [Note.a, Note.b, Note.c, Note.d, Note.e, Note.f, Note.g]
 
-        XCTAssertEqual(Key.CMajor.relativeKey.keyNotes, expectedNotes)
+        XCTAssertEqual(Key.cMajor.relativeKey.keyNotes, expectedNotes)
     }
 
     func test_that_e_flat_minor_returns_e_as_root()
     {
-        let rootName = Key.EFlatMinor.rootName
+        let rootName = Key.eFlatMinor.rootName
         XCTAssertEqual(rootName, "Eb");
     }
 
     func test_that_e_flat_minor_returns_minor_quality()
     {
-        let quality = Key.EFlatMinor.quality
-        XCTAssertEqual(quality, KeyQuality.Minor);
+        let quality = Key.eFlatMinor.quality
+        XCTAssertEqual(quality, KeyQuality.minor);
     }
 
     func test_that_major_key_relative_returns_minor_key()
     {
-        XCTAssertEqual(Key.CMajor.relativeKey.quality, KeyQuality.Minor);
+        XCTAssertEqual(Key.cMajor.relativeKey.quality, KeyQuality.minor);
     }
 }

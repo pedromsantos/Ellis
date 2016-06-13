@@ -6,8 +6,8 @@ public class Chord: Equatable
     
     public init(
         notes: [NoteWithFunction],
-        inversion:Inversions = .Root,
-        inverterFactory:ChordShapeFactory = .Closed)
+        inversion:Inversions = .root,
+        inverterFactory:ChordShapeFactory = .closed)
     {
         self.chordNotes = notes
         self.inversion = inversion
@@ -66,7 +66,7 @@ public class Chord: Equatable
     public var name:String
     {
         let closedChord = self.toClosed()
-        return closedChord.noteByFunction(NoteFunction.Root).Name
+        return closedChord.noteByFunction(NoteFunction.root).Name
             + closedChord.function.Abreviature;
     }
     
@@ -80,7 +80,7 @@ public class Chord: Equatable
         return inverterFactory
     }
     
-    public func noteByFunction(function: NoteFunction) -> Note
+    public func noteByFunction(_ function: NoteFunction) -> Note
     {
         return chordNotes.filter({ $0.function == function }).first!.note
     }
@@ -100,13 +100,13 @@ public class Chord: Equatable
     public func toDrop2() -> Chord
     {
         var drop2ChordNotes = swapChordNotes(0, secondNoteIndex: 1)
-        let first = drop2ChordNotes.removeAtIndex(0)
+        let first = drop2ChordNotes.remove(at: 0)
         drop2ChordNotes.append(first)
         
         return Chord(
             notes: drop2ChordNotes,
-            inversion: .Root,
-            inverterFactory:.Drop2)
+            inversion: .root,
+            inverterFactory:.drop2)
     }
     
     public func toDrop3() -> Chord
@@ -115,8 +115,8 @@ public class Chord: Equatable
         
         return Chord(
             notes: drop3ChordNotes,
-            inversion: .Root,
-            inverterFactory:.Drop3)
+            inversion: .root,
+            inverterFactory:.drop3)
     }
     
     public func toClosed() -> Chord
@@ -130,9 +130,9 @@ public class Chord: Equatable
         return Chord(notes: closedChordNotes)
     }
     
-    public func transpose(newRoot: Note) -> Chord
+    public func transpose(_ newRoot: Note) -> Chord
     {
-        let interval = noteByFunction(NoteFunction.Root)
+        let interval = noteByFunction(NoteFunction.root)
             .intervalWithNote(newRoot)
         var transposedNotes = [NoteWithFunction]()
         
@@ -149,7 +149,7 @@ public class Chord: Equatable
         return Chord(notes: transposedNotes)
     }
     
-    public func voiceForBass(desiredBass: NoteFunction) -> Chord
+    public func voiceForBass(_ desiredBass: NoteFunction) -> Chord
     {
         return voiceForNoteFunction(desiredBass,
             closure: {
@@ -158,7 +158,7 @@ public class Chord: Equatable
         })
     }
     
-    public func voiceForLead(desiredLead: NoteFunction) -> Chord
+    public func voiceForLead(_ desiredLead: NoteFunction) -> Chord
     {
         return voiceForNoteFunction(desiredLead,
             closure: {
@@ -167,7 +167,7 @@ public class Chord: Equatable
         })
     }
     
-    public func invertionWithLeadClosestToNote(leadTarget: Note) -> Chord
+    public func invertionWithLeadClosestToNote(_ leadTarget: Note) -> Chord
     {
         var chord = self
         var bestInversion = self
@@ -197,7 +197,7 @@ public class Chord: Equatable
     }
     
     private func voiceForNoteFunction(
-        desiredNoteFunction: NoteFunction,
+        _ desiredNoteFunction: NoteFunction,
         closure: (chord:Chord) -> NoteWithFunction) -> Chord
     {
         var invertedChord = self
@@ -223,7 +223,7 @@ public class Chord: Equatable
     }
     
     private func swapChordNotes(
-        firstNoteIndex: Int,
+        _ firstNoteIndex: Int,
         secondNoteIndex: Int) -> [NoteWithFunction]
     {
         var chordNotesSwaped = self.chordNotes
@@ -238,7 +238,7 @@ public class Chord: Equatable
     private func chordIntervals() -> [Interval]
     {
         var intervals: [Interval] = []
-        let root = noteByFunction(NoteFunction.Root)
+        let root = noteByFunction(NoteFunction.root)
         
         for note: NoteWithFunction in chordNotes
         {
@@ -251,7 +251,7 @@ public class Chord: Equatable
         return intervals
     }
     
-    public func equalTo(otherChord: Chord) -> Bool
+    public func equalTo(_ otherChord: Chord) -> Bool
     {
         if self.chordNotes.count != otherChord.chordNotes.count
         {

@@ -5,7 +5,7 @@ class Drop2Inverter: ChordInverter
         let last = chordNotes.removeLast()
         rotate()
         rotate()
-        chordNotes.insert(last, atIndex: 0)
+        chordNotes.insert(last, at: 0)
         return createChord()
     }
     
@@ -15,11 +15,11 @@ class Drop2Inverter: ChordInverter
         return Chord(
             notes: chordNotes,
             inversion:inversion,
-            inverterFactory: .Drop2)
+            inverterFactory: .drop2)
     }
     
     override func resetInvertions() -> Chord
     {
-        return Chord(notes: chordNotes, inversion:.Root).toClosed().toDrop2()
+        return Chord(notes: chordNotes, inversion:.root).toClosed().toDrop2()
     }
 }

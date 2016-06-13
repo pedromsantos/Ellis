@@ -5,190 +5,190 @@ class TriadsKeyHarmonizerTests: XCTestCase
 {
     func test_that_it_should_create_maj_from_from_first_note_in_major_scale()
     {
-        let harmonizer = TriadsKeyHarmonizer(key: Key.CMajor)
+        let harmonizer = TriadsKeyHarmonizer(key: Key.cMajor)
 
         let chord = harmonizer.i()
 
-        XCTAssertEqual(ChordFunction.Major, chord.function)
+        XCTAssertEqual(ChordFunction.major, chord.function)
     }
 
     func test_that_it_should_create_min_from_from_second_note_in_major_scale()
     {
-        let harmonizer = TriadsKeyHarmonizer(key: Key.DMajor)
+        let harmonizer = TriadsKeyHarmonizer(key: Key.dMajor)
 
         let chord = harmonizer.ii()
 
-        XCTAssertEqual(ChordFunction.Minor, chord.function)
+        XCTAssertEqual(ChordFunction.minor, chord.function)
     }
 
     func test_that_it_should_create_min_from_from_third_note_in_major_scale()
     {
-        let harmonizer = TriadsKeyHarmonizer(key: Key.EMajor)
+        let harmonizer = TriadsKeyHarmonizer(key: Key.eMajor)
 
         let chord = harmonizer.iii()
 
-        XCTAssertEqual(ChordFunction.Minor, chord.function)
+        XCTAssertEqual(ChordFunction.minor, chord.function)
     }
 
     func test_that_it_should_create_maj_from_from_fourth_note_in_major_scale()
     {
-        let harmonizer = TriadsKeyHarmonizer(key: Key.FMajor)
+        let harmonizer = TriadsKeyHarmonizer(key: Key.fMajor)
 
         let chord = harmonizer.iv()
 
-        XCTAssertEqual(ChordFunction.Major, chord.function)
+        XCTAssertEqual(ChordFunction.major, chord.function)
     }
 
     func test_that_it_should_create_dom_from_from_fifth_note_in_major_scale()
     {
-        let harmonizer = TriadsKeyHarmonizer(key: Key.GMajor)
+        let harmonizer = TriadsKeyHarmonizer(key: Key.gMajor)
 
         let chord = harmonizer.v()
 
-        XCTAssertEqual(ChordFunction.Major, chord.function)
+        XCTAssertEqual(ChordFunction.major, chord.function)
     }
 
     func test_that_it_should_create_min_from_from_sixth_note_in_major_scale()
     {
-        let harmonizer = TriadsKeyHarmonizer(key: Key.AMajor)
+        let harmonizer = TriadsKeyHarmonizer(key: Key.aMajor)
 
         let chord = harmonizer.vi()
 
-        XCTAssertEqual(ChordFunction.Minor, chord.function)
+        XCTAssertEqual(ChordFunction.minor, chord.function)
     }
 
     func test_that_it_should_create_minb5_from_from_seventh_note_in_major_scale()
     {
-        let harmonizer = TriadsKeyHarmonizer(key: Key.BMajor)
+        let harmonizer = TriadsKeyHarmonizer(key: Key.bMajor)
 
         let chord = harmonizer.vii()
 
-        XCTAssertEqual(ChordFunction.Diminished, chord.function)
+        XCTAssertEqual(ChordFunction.diminished, chord.function)
     }
 
     func test_that_it_should_create_maj_from_from_first_note_in_minor_scale()
     {
-        let harmonizer = TriadsKeyHarmonizer(key: Key.CMinor)
+        let harmonizer = TriadsKeyHarmonizer(key: Key.cMinor)
 
         let chord = harmonizer.i()
 
-        XCTAssertEqual(ChordFunction.Minor, chord.function)
+        XCTAssertEqual(ChordFunction.minor, chord.function)
     }
 
     func test_that_it_should_create_min_from_from_second_note_in_minor_scale()
     {
-        let harmonizer = TriadsKeyHarmonizer(key: Key.DMinor)
+        let harmonizer = TriadsKeyHarmonizer(key: Key.dMinor)
 
         let chord = harmonizer.ii()
 
-        XCTAssertEqual(ChordFunction.Diminished, chord.function)
+        XCTAssertEqual(ChordFunction.diminished, chord.function)
     }
 
     func test_that_it_should_create_min_from_from_third_note_in_minor_scale()
     {
-        let harmonizer = TriadsKeyHarmonizer(key: Key.EMinor)
+        let harmonizer = TriadsKeyHarmonizer(key: Key.eMinor)
 
         let chord = harmonizer.iii()
 
-        XCTAssertEqual(ChordFunction.Augmented, chord.function)
+        XCTAssertEqual(ChordFunction.augmented, chord.function)
     }
 
     func test_that_it_should_create_maj_from_from_fourth_note_in_minor_scale()
     {
-        let harmonizer = TriadsKeyHarmonizer(key: Key.FMinor)
+        let harmonizer = TriadsKeyHarmonizer(key: Key.fMinor)
 
         let chord = harmonizer.iv()
 
-        XCTAssertEqual(ChordFunction.Minor, chord.function)
+        XCTAssertEqual(ChordFunction.minor, chord.function)
     }
 
     func test_that_it_should_create_dom_from_from_fifth_note_in_minor_scale()
     {
-        let harmonizer = TriadsKeyHarmonizer(key: Key.GMinor)
+        let harmonizer = TriadsKeyHarmonizer(key: Key.gMinor)
 
         let chord = harmonizer.v()
 
-        XCTAssertEqual(ChordFunction.Major, chord.function)
+        XCTAssertEqual(ChordFunction.major, chord.function)
     }
 
     func test_that_it_should_create_min_from_from_sixth_note_in_minor_scale()
     {
-        let harmonizer = TriadsKeyHarmonizer(key: Key.AMinor)
+        let harmonizer = TriadsKeyHarmonizer(key: Key.aMinor)
 
         let chord = harmonizer.vi()
 
-        XCTAssertEqual(ChordFunction.Major, chord.function)
+        XCTAssertEqual(ChordFunction.major, chord.function)
     }
 
     func test_that_it_should_create_minb5_from_from_seventh_note_in_minor_scale()
     {
-        let harmonizer = TriadsKeyHarmonizer(key: Key.BMinor)
+        let harmonizer = TriadsKeyHarmonizer(key: Key.bMinor)
 
         let chord = harmonizer.vii()
 
-        XCTAssertEqual(ChordFunction.Diminished, chord.function)
+        XCTAssertEqual(ChordFunction.diminished, chord.function)
     }
 
     func test_that_it_should_create_maj_from_from_first_note_in_major_scale_using_scale_degrees()
     {
-        let harmonizer = TriadsKeyHarmonizer(key: Key.CMajor)
+        let harmonizer = TriadsKeyHarmonizer(key: Key.cMajor)
 
         let chord = harmonizer.chordForScaleDegree(0)
 
-        XCTAssertEqual(ChordFunction.Major, chord.function)
+        XCTAssertEqual(ChordFunction.major, chord.function)
     }
 
     func test_that_it_should_create_min_from_from_second_note_in_major_scale_using_scale_degrees()
     {
-        let harmonizer = TriadsKeyHarmonizer(key: Key.DMajor)
+        let harmonizer = TriadsKeyHarmonizer(key: Key.dMajor)
 
         let chord = harmonizer.chordForScaleDegree(1)
 
-        XCTAssertEqual(ChordFunction.Minor, chord.function)
+        XCTAssertEqual(ChordFunction.minor, chord.function)
     }
 
     func test_that_it_should_create_min_from_from_third_note_in_major_scale_using_scale_degrees()
     {
-        let harmonizer = TriadsKeyHarmonizer(key: Key.EMajor)
+        let harmonizer = TriadsKeyHarmonizer(key: Key.eMajor)
 
         let chord = harmonizer.chordForScaleDegree(2)
 
-        XCTAssertEqual(ChordFunction.Minor, chord.function)
+        XCTAssertEqual(ChordFunction.minor, chord.function)
     }
 
     func test_that_it_should_create_maj_from_from_fourth_note_in_major_scale_using_scale_degrees()
     {
-        let harmonizer = TriadsKeyHarmonizer(key: Key.FMajor)
+        let harmonizer = TriadsKeyHarmonizer(key: Key.fMajor)
 
         let chord = harmonizer.chordForScaleDegree(3)
 
-        XCTAssertEqual(ChordFunction.Major, chord.function)
+        XCTAssertEqual(ChordFunction.major, chord.function)
     }
 
     func test_that_it_should_create_dom_from_from_fifth_note_in_major_scale_using_scale_degrees()
     {
-        let harmonizer = TriadsKeyHarmonizer(key: Key.GMajor)
+        let harmonizer = TriadsKeyHarmonizer(key: Key.gMajor)
 
         let chord = harmonizer.chordForScaleDegree(4)
 
-        XCTAssertEqual(ChordFunction.Major, chord.function)
+        XCTAssertEqual(ChordFunction.major, chord.function)
     }
 
     func test_that_it_should_create_min_from_from_sixth_note_in_major_scale_using_scale_degrees()
     {
-        let harmonizer = TriadsKeyHarmonizer(key: Key.AMajor)
+        let harmonizer = TriadsKeyHarmonizer(key: Key.aMajor)
 
         let chord = harmonizer.chordForScaleDegree(5)
 
-        XCTAssertEqual(ChordFunction.Minor, chord.function)
+        XCTAssertEqual(ChordFunction.minor, chord.function)
     }
 
     func test_that_it_should_create_minb5_from_from_seventh_note_in_major_scale_using_scale_degrees()
     {
-        let harmonizer = TriadsKeyHarmonizer(key: Key.BMajor)
+        let harmonizer = TriadsKeyHarmonizer(key: Key.bMajor)
 
         let chord = harmonizer.chordForScaleDegree(6)
 
-        XCTAssertEqual(ChordFunction.Diminished, chord.function)
+        XCTAssertEqual(ChordFunction.diminished, chord.function)
     }
 }

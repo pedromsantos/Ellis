@@ -1,4 +1,4 @@
 public enum KeyQuality
 {
-    case Major, Minor
+    case major, minor
 }

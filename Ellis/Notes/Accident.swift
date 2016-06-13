@@ -1,9 +1,9 @@
 public enum Accident: Int
 {
-    case Flat, None, Sharp
+    case flat, none, sharp
 
     public func direction() -> Int
     {
-        return self == Accident.Flat ? -1 : 1
+        return self == Accident.flat ? -1 : 1
     }
 }

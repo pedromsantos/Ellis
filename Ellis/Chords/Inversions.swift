@@ -1,3 +1,3 @@
 public enum Inversions:Int {
-    case Root, First, Second, Third
+    case root, first, second, third
 }

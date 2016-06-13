@@ -1,6 +1,6 @@
 public enum NoteFunction: Int
 {
-    case Root, Third, Fifth, Seventh, Ninth, Eleventh, Thirnteenth
+    case root, third, fifth, seventh, ninth, eleventh, thirnteenth
 
     private static let allValues = ["R", "3", "5", "7", "9", "11", "13"]
 

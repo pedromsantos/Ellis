@@ -5,21 +5,21 @@ class ChordBuilderTests: XCTestCase
 {
     func test_that_it_should_create_major_triad()
     {
-        let builder = ChordBuilder(root: Note.C)
+        let builder = ChordBuilder(root: Note.c)
 
         let chord = builder
         .addMajorThird()
         .addPerfectFifth()
         .build()
 
-        let expectedNotes = [Note.C, Note.E, Note.G]
+        let expectedNotes = [Note.c, Note.e, Note.g]
 
         assertNotesSameAsExpectedNotes(expectedNotes, actualNotes: chord.notes)
     }
 
     func test_that_it_should_create_major_seventh_chord()
     {
-        let builder = ChordBuilder(root: Note.C)
+        let builder = ChordBuilder(root: Note.c)
 
         let chord = builder
         .addMajorThird()
@@ -27,14 +27,14 @@ class ChordBuilderTests: XCTestCase
         .addMajorSeventh()
         .build()
 
-        let expectedNotes = [Note.C, Note.E, Note.G, Note.B]
+        let expectedNotes = [Note.c, Note.e, Note.g, Note.b]
 
         assertNotesSameAsExpectedNotes(expectedNotes, actualNotes: chord.notes)
     }
 
     func test_that_it_should_create_dominant_seventh_chord()
     {
-        let builder = ChordBuilder(root: Note.C)
+        let builder = ChordBuilder(root: Note.c)
 
         let chord = builder
         .addMajorThird()
@@ -42,14 +42,14 @@ class ChordBuilderTests: XCTestCase
         .addMinorSeventh()
         .build()
 
-        let expectedNotes = [Note.C, Note.E, Note.G, Note.BFlat]
+        let expectedNotes = [Note.c, Note.e, Note.g, Note.bFlat]
 
         assertNotesSameAsExpectedNotes(expectedNotes, actualNotes: chord.notes)
     }
 
     func test_that_it_should_create_minor_seventh_chord()
     {
-        let builder = ChordBuilder(root: Note.C)
+        let builder = ChordBuilder(root: Note.c)
 
         let chord = builder
         .addMinorThird()
@@ -57,14 +57,14 @@ class ChordBuilderTests: XCTestCase
         .addMinorSeventh()
         .build()
 
-        let expectedNotes = [Note.C, Note.EFlat, Note.G, Note.BFlat]
+        let expectedNotes = [Note.c, Note.eFlat, Note.g, Note.bFlat]
 
         assertNotesSameAsExpectedNotes(expectedNotes, actualNotes: chord.notes)
     }
 
     func test_that_it_should_create_minor_seventh_flat_5_chord()
     {
-        let builder = ChordBuilder(root: Note.C)
+        let builder = ChordBuilder(root: Note.c)
 
         let chord = builder
         .addMinorThird()
@@ -72,14 +72,14 @@ class ChordBuilderTests: XCTestCase
         .addMinorSeventh()
         .build()
 
-        let expectedNotes = [Note.C, Note.EFlat, Note.GFlat, Note.BFlat]
+        let expectedNotes = [Note.c, Note.eFlat, Note.gFlat, Note.bFlat]
 
         assertNotesSameAsExpectedNotes(expectedNotes, actualNotes: chord.notes)
     }
 
     func test_that_it_should_create_diminished_seventh_chord()
     {
-        let builder = ChordBuilder(root: Note.C)
+        let builder = ChordBuilder(root: Note.c)
 
         let chord = builder
         .addMinorThird()
@@ -87,40 +87,40 @@ class ChordBuilderTests: XCTestCase
         .addDiminishedSeventh()
         .build()
 
-        let expectedNotes = [Note.C, Note.EFlat, Note.GFlat, Note.A]
+        let expectedNotes = [Note.c, Note.eFlat, Note.gFlat, Note.a]
 
         assertNotesSameAsExpectedNotes(expectedNotes, actualNotes: chord.notes)
     }
 
     func test_that_it_should_create_diminished_seventh_chord_from_intervals()
     {
-        let intervals = ChordFunction.Diminished7.Intervals
-        let builder = ChordBuilder(root: Note.C)
+        let intervals = ChordFunction.diminished7.Intervals
+        let builder = ChordBuilder(root: Note.c)
 
         var noteFunctionIndex = 1
         for interval in intervals
         {
-            builder.addNoteWithInterval(interval, function: NoteFunction(rawValue: noteFunctionIndex)!)
+            let _ = builder.addNoteWithInterval(interval, function: NoteFunction(rawValue: noteFunctionIndex)!)
             noteFunctionIndex += 1
         }
 
         let chord = builder.build()
 
-        let expectedNotes = [Note.C, Note.EFlat, Note.GFlat, Note.A]
+        let expectedNotes = [Note.c, Note.eFlat, Note.gFlat, Note.a]
 
         assertNotesSameAsExpectedNotes(expectedNotes, actualNotes: chord.notes)
     }
 
     func test_that_it_should_create_chord_from_root_and_function()
     {
-        let chord = ChordBuilder(root: Note.C, chordFunction: ChordFunction.Diminished7).build()
+        let chord = ChordBuilder(root: Note.c, chordFunction: ChordFunction.diminished7).build()
 
-        let expectedNotes = [Note.C, Note.EFlat, Note.GFlat, Note.A]
+        let expectedNotes = [Note.c, Note.eFlat, Note.gFlat, Note.a]
 
         assertNotesSameAsExpectedNotes(expectedNotes, actualNotes: chord.notes)
     }
 
-    func assertNotesSameAsExpectedNotes(expectedNotes: [Note], actualNotes: [Note])
+    func assertNotesSameAsExpectedNotes(_ expectedNotes: [Note], actualNotes: [Note])
     {
         for i in 0 ..< actualNotes.count
         {

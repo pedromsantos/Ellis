@@ -1,17 +1,17 @@
 public enum Octave: Int
 {
-    case SubContra = -16
-    case Contra = -8
-    case Great = -4
-    case Small = -2
-    case OneLine = 1
-    case TwoLine = 2
-    case ThreeLine = 4
-    case FourLine = 8
-    case FiveLine = 16
-    case SixLine = 32
+    case subContra = -16
+    case contra = -8
+    case great = -4
+    case small = -2
+    case oneLine = 1
+    case twoLine = 2
+    case threeLine = 4
+    case fourLine = 8
+    case fiveLine = 16
+    case sixLine = 32
 
-    public func adjustFrequencyForOctave(frequency: Double) -> Double
+    public func adjustFrequencyForOctave(_ frequency: Double) -> Double
     {
         let octaveValue = Double(self.rawValue)
 

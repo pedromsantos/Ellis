@@ -1,37 +1,37 @@
 public enum ChordShapeFactory: Int
 {
-    case Closed
-    case Drop2
-    case Drop3
+    case closed
+    case drop2
+    case drop3
     
-    public func shape(chord: Chord) -> Chord
+    public func shape(_ chord: Chord) -> Chord
     {
         switch self
         {
-        case Closed:
+        case closed:
             return chord.toClosed()
-        case Drop2:
+        case drop2:
             return chord.toClosed().toDrop2()
-        case Drop3:
+        case drop3:
             return chord.toClosed().toDrop3()
         }
     }
     
-    public func createInverter(chord:Chord) -> ChordInverter
+    public func createInverter(_ chord:Chord) -> ChordInverter
     {
         switch self
         {
-        case Closed:
+        case closed:
             return
                 ChordInverter(
                     chordNotes: chord.notesWithFunctions,
                     inversion: chord.Inversion)
-        case Drop2:
+        case drop2:
             return
                 Drop2Inverter(
                     chordNotes: chord.notesWithFunctions,
                     inversion: chord.Inversion)
-        case Drop3:
+        case drop3:
             return
                 Drop3Inverter(
                     chordNotes: chord.notesWithFunctions,

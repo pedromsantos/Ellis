@@ -1,27 +1,27 @@
 public enum Interval: Int
 {
-    case Unisson = 0
-    case MinorSecond
-    case MajorSecond
-    case MinorThird
-    case MajorThird
-    case PerfectForth
-    case DiminishedFifth
-    case PerfectFifth
-    case AugmentedFifth
-    case MajorSixth
-    case MinorSeventh
-    case MajorSeventh
-    case PerfectOctave
+    case unisson = 0
+    case minorSecond
+    case majorSecond
+    case minorThird
+    case majorThird
+    case perfectForth
+    case diminishedFifth
+    case perfectFifth
+    case augmentedFifth
+    case majorSixth
+    case minorSeventh
+    case majorSeventh
+    case perfectOctave
 
-    public static func createIntervalFromDistance(distance: Int) -> Interval
+    public static func createIntervalFromDistance(_ distance: Int) -> Interval
     {
         if let interval = Interval(rawValue: distance)
         {
             return interval
         }
 
-        return Interval.Unisson
+        return Interval.unisson
     }
 }
 

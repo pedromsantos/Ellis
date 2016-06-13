@@ -8,35 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		CF58D47E1C340F6E00B6D2C0 /* Ellis.h in Headers */ = {isa = PBXBuildFile; fileRef = CF58D47D1C340F6E00B6D2C0 /* Ellis.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CF58D4851C340F6E00B6D2C0 /* Ellis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF58D47A1C340F6E00B6D2C0 /* Ellis.framework */; settings = {ASSET_TAGS = (); }; };
-		CF58D4BB1C34108300B6D2C0 /* ChordBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4B61C34108300B6D2C0 /* ChordBuilderTests.swift */; settings = {ASSET_TAGS = (); }; };
-		CF58D4BC1C34108300B6D2C0 /* ChordFunctionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4B71C34108300B6D2C0 /* ChordFunctionTests.swift */; settings = {ASSET_TAGS = (); }; };
-		CF58D4BD1C34108300B6D2C0 /* ChordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4B81C34108300B6D2C0 /* ChordTests.swift */; settings = {ASSET_TAGS = (); }; };
-		CF58D4BF1C34108300B6D2C0 /* KeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4BA1C34108300B6D2C0 /* KeyTests.swift */; settings = {ASSET_TAGS = (); }; };
-		CF58D4C51C34108E00B6D2C0 /* IntervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4C01C34108E00B6D2C0 /* IntervalTests.swift */; settings = {ASSET_TAGS = (); }; };
-		CF58D4C61C34108E00B6D2C0 /* NoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4C11C34108E00B6D2C0 /* NoteTests.swift */; settings = {ASSET_TAGS = (); }; };
-		CF58D4C71C34108E00B6D2C0 /* SeventhsKeyHarmonizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4C21C34108E00B6D2C0 /* SeventhsKeyHarmonizerTests.swift */; settings = {ASSET_TAGS = (); }; };
-		CF58D4C91C34108E00B6D2C0 /* TriadsKeyHarmonizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4C41C34108E00B6D2C0 /* TriadsKeyHarmonizerTests.swift */; settings = {ASSET_TAGS = (); }; };
-		CF8F5B661C34908500087CE1 /* Chord.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B5E1C34908500087CE1 /* Chord.swift */; settings = {ASSET_TAGS = (); }; };
-		CF8F5B671C34908500087CE1 /* ChordBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B5F1C34908500087CE1 /* ChordBuilder.swift */; settings = {ASSET_TAGS = (); }; };
-		CF8F5B681C34908500087CE1 /* ChordFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B601C34908500087CE1 /* ChordFunction.swift */; settings = {ASSET_TAGS = (); }; };
-		CF8F5B691C34908500087CE1 /* ChordInverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B611C34908500087CE1 /* ChordInverter.swift */; settings = {ASSET_TAGS = (); }; };
-		CF8F5B6A1C34908500087CE1 /* ChordShapeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B621C34908500087CE1 /* ChordShapeFactory.swift */; settings = {ASSET_TAGS = (); }; };
-		CF8F5B6B1C34908500087CE1 /* Drop2Inverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B631C34908500087CE1 /* Drop2Inverter.swift */; settings = {ASSET_TAGS = (); }; };
-		CF8F5B6C1C34908500087CE1 /* Drop3Inverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B641C34908500087CE1 /* Drop3Inverter.swift */; settings = {ASSET_TAGS = (); }; };
-		CF8F5B6D1C34908500087CE1 /* Inversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B651C34908500087CE1 /* Inversions.swift */; settings = {ASSET_TAGS = (); }; };
-		CF8F5B6F1C34911100087CE1 /* NoteFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B6E1C34911100087CE1 /* NoteFunction.swift */; settings = {ASSET_TAGS = (); }; };
-		CF8F5B711C34914A00087CE1 /* NoteWithFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B701C34914A00087CE1 /* NoteWithFunction.swift */; settings = {ASSET_TAGS = (); }; };
-		CF8F5B7D1C34920B00087CE1 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B731C34920B00087CE1 /* Key.swift */; settings = {ASSET_TAGS = (); }; };
-		CF8F5B7E1C34920B00087CE1 /* KeyHarmonizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B741C34920B00087CE1 /* KeyHarmonizer.swift */; settings = {ASSET_TAGS = (); }; };
-		CF8F5B7F1C34920B00087CE1 /* KeyQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B751C34920B00087CE1 /* KeyQuality.swift */; settings = {ASSET_TAGS = (); }; };
-		CF8F5B801C34920B00087CE1 /* SeventhsKeyHarmonizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B761C34920B00087CE1 /* SeventhsKeyHarmonizer.swift */; settings = {ASSET_TAGS = (); }; };
-		CF8F5B811C34920B00087CE1 /* TriadsKeyHarmonizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B771C34920B00087CE1 /* TriadsKeyHarmonizer.swift */; settings = {ASSET_TAGS = (); }; };
-		CF8F5B821C34920B00087CE1 /* Accident.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B791C34920B00087CE1 /* Accident.swift */; settings = {ASSET_TAGS = (); }; };
-		CF8F5B831C34920B00087CE1 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B7A1C34920B00087CE1 /* Interval.swift */; settings = {ASSET_TAGS = (); }; };
-		CF8F5B841C34920B00087CE1 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B7B1C34920B00087CE1 /* Note.swift */; settings = {ASSET_TAGS = (); }; };
-		CF8F5B851C34920B00087CE1 /* Octave.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B7C1C34920B00087CE1 /* Octave.swift */; settings = {ASSET_TAGS = (); }; };
-		CF8F5B871C34938900087CE1 /* KeyHrmonizerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B861C34938900087CE1 /* KeyHrmonizerFactory.swift */; settings = {ASSET_TAGS = (); }; };
+		CF58D4851C340F6E00B6D2C0 /* Ellis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF58D47A1C340F6E00B6D2C0 /* Ellis.framework */; };
+		CF58D4BB1C34108300B6D2C0 /* ChordBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4B61C34108300B6D2C0 /* ChordBuilderTests.swift */; };
+		CF58D4BC1C34108300B6D2C0 /* ChordFunctionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4B71C34108300B6D2C0 /* ChordFunctionTests.swift */; };
+		CF58D4BD1C34108300B6D2C0 /* ChordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4B81C34108300B6D2C0 /* ChordTests.swift */; };
+		CF58D4BF1C34108300B6D2C0 /* KeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4BA1C34108300B6D2C0 /* KeyTests.swift */; };
+		CF58D4C51C34108E00B6D2C0 /* IntervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4C01C34108E00B6D2C0 /* IntervalTests.swift */; };
+		CF58D4C61C34108E00B6D2C0 /* NoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4C11C34108E00B6D2C0 /* NoteTests.swift */; };
+		CF58D4C71C34108E00B6D2C0 /* SeventhsKeyHarmonizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4C21C34108E00B6D2C0 /* SeventhsKeyHarmonizerTests.swift */; };
+		CF58D4C91C34108E00B6D2C0 /* TriadsKeyHarmonizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58D4C41C34108E00B6D2C0 /* TriadsKeyHarmonizerTests.swift */; };
+		CF8F5B661C34908500087CE1 /* Chord.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B5E1C34908500087CE1 /* Chord.swift */; };
+		CF8F5B671C34908500087CE1 /* ChordBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B5F1C34908500087CE1 /* ChordBuilder.swift */; };
+		CF8F5B681C34908500087CE1 /* ChordFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B601C34908500087CE1 /* ChordFunction.swift */; };
+		CF8F5B691C34908500087CE1 /* ChordInverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B611C34908500087CE1 /* ChordInverter.swift */; };
+		CF8F5B6A1C34908500087CE1 /* ChordShapeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B621C34908500087CE1 /* ChordShapeFactory.swift */; };
+		CF8F5B6B1C34908500087CE1 /* Drop2Inverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B631C34908500087CE1 /* Drop2Inverter.swift */; };
+		CF8F5B6C1C34908500087CE1 /* Drop3Inverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B641C34908500087CE1 /* Drop3Inverter.swift */; };
+		CF8F5B6D1C34908500087CE1 /* Inversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B651C34908500087CE1 /* Inversions.swift */; };
+		CF8F5B6F1C34911100087CE1 /* NoteFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B6E1C34911100087CE1 /* NoteFunction.swift */; };
+		CF8F5B711C34914A00087CE1 /* NoteWithFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B701C34914A00087CE1 /* NoteWithFunction.swift */; };
+		CF8F5B7D1C34920B00087CE1 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B731C34920B00087CE1 /* Key.swift */; };
+		CF8F5B7E1C34920B00087CE1 /* KeyHarmonizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B741C34920B00087CE1 /* KeyHarmonizer.swift */; };
+		CF8F5B7F1C34920B00087CE1 /* KeyQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B751C34920B00087CE1 /* KeyQuality.swift */; };
+		CF8F5B801C34920B00087CE1 /* SeventhsKeyHarmonizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B761C34920B00087CE1 /* SeventhsKeyHarmonizer.swift */; };
+		CF8F5B811C34920B00087CE1 /* TriadsKeyHarmonizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B771C34920B00087CE1 /* TriadsKeyHarmonizer.swift */; };
+		CF8F5B821C34920B00087CE1 /* Accident.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B791C34920B00087CE1 /* Accident.swift */; };
+		CF8F5B831C34920B00087CE1 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B7A1C34920B00087CE1 /* Interval.swift */; };
+		CF8F5B841C34920B00087CE1 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B7B1C34920B00087CE1 /* Note.swift */; };
+		CF8F5B851C34920B00087CE1 /* Octave.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B7C1C34920B00087CE1 /* Octave.swift */; };
+		CF8F5B871C34938900087CE1 /* KeyHrmonizerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F5B861C34938900087CE1 /* KeyHrmonizerFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -248,14 +248,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = BytesTeam;
 				TargetAttributes = {
 					CF58D4791C340F6E00B6D2C0 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 					};
 					CF58D4831C340F6E00B6D2C0 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -453,6 +455,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -471,6 +474,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pedromsantos.Ellis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -483,6 +488,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bytesteam.EllisTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -494,6 +500,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bytesteam.EllisTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

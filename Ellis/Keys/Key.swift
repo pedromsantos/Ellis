@@ -1,67 +1,67 @@
 public enum Key: Int
 {
-    case AMajor
-    case AFlatMajor
-    case BMajor
-    case BFlatMajor
-    case CMajor
-    case CSharpMajor
-    case DMajor
-    case DFlatMajor
-    case EMajor
-    case EFlatMajor
-    case FMajor
-    case FSharpMajor
-    case GMajor
-    case GFlatMajor
-    case AMinor
-    case AFlatMinor
-    case ASharpMinor
-    case BMinor
-    case BFlatMinor
-    case CMinor
-    case CSharpMinor
-    case DMinor
-    case EFlatMinor
-    case EMinor
-    case FMinor
-    case FSharpMinor
-    case GMinor
-    case GSharpMinor
+    case aMajor
+    case aFlatMajor
+    case bMajor
+    case bFlatMajor
+    case cMajor
+    case cSharpMajor
+    case dMajor
+    case dFlatMajor
+    case eMajor
+    case eFlatMajor
+    case fMajor
+    case fSharpMajor
+    case gMajor
+    case gFlatMajor
+    case aMinor
+    case aFlatMinor
+    case aSharpMinor
+    case bMinor
+    case bFlatMinor
+    case cMinor
+    case cSharpMinor
+    case dMinor
+    case eFlatMinor
+    case eMinor
+    case fMinor
+    case fSharpMinor
+    case gMinor
+    case gSharpMinor
 
     private static let fifths =
-        [Note.F, Note.C, Note.G, Note.D, Note.A, Note.E, Note.B]
+        [Note.f, Note.c, Note.g, Note.d, Note.a, Note.e, Note.b]
     
     private static let allValues =
     [
-        (Relative: Key.FSharpMinor, Root: Note.A, Accidents: 3, Quality: KeyQuality.Major),
-        (Relative: Key.FMinor, Root: Note.AFlat, Accidents: -4, Quality: KeyQuality.Major),
-        (Relative: Key.GSharpMinor, Root: Note.B, Accidents: 5, Quality: KeyQuality.Major),
-        (Relative: Key.GMinor, Root: Note.BFlat, Accidents: -2, Quality: KeyQuality.Major),
-        (Relative: Key.AMinor, Root: Note.C, Accidents: 0, Quality: KeyQuality.Major),
-        (Relative: Key.BFlatMinor, Root: Note.CSharp, Accidents: 7, Quality: KeyQuality.Major),
-        (Relative: Key.BMinor, Root: Note.D, Accidents: 2, Quality: KeyQuality.Major),
-        (Relative: Key.BFlatMinor, Root: Note.DFlat, Accidents: -5, Quality: KeyQuality.Major),
-        (Relative: Key.CSharpMinor, Root: Note.E, Accidents: 4, Quality: KeyQuality.Major),
-        (Relative: Key.CMinor, Root: Note.EFlat, Accidents: -3, Quality: KeyQuality.Major),
-        (Relative: Key.DMinor, Root: Note.F, Accidents: -1, Quality: KeyQuality.Major),
-        (Relative: Key.EFlatMinor, Root: Note.FSharp, Accidents: 6, Quality: KeyQuality.Major),
-        (Relative: Key.EMinor, Root: Note.G, Accidents: 1, Quality: KeyQuality.Major),
-        (Relative: Key.EFlatMinor, Root: Note.GFlat, Accidents: -6, Quality: KeyQuality.Major),
-        (Relative: Key.CMajor, Root: Note.A, Accidents: 0, Quality: KeyQuality.Minor),
-        (Relative: Key.BMajor, Root: Note.AFlat, Accidents: -7, Quality: KeyQuality.Minor),
-        (Relative: Key.CSharpMinor, Root: Note.ASharp, Accidents: 7, Quality: KeyQuality.Minor),
-        (Relative: Key.DMajor, Root: Note.B, Accidents: 2, Quality: KeyQuality.Minor),
-        (Relative: Key.DFlatMajor, Root: Note.BFlat, Accidents: -5, Quality: KeyQuality.Minor),
-        (Relative: Key.EFlatMajor, Root: Note.C, Accidents: -3, Quality: KeyQuality.Minor),
-        (Relative: Key.EMajor, Root: Note.CSharp, Accidents: 4, Quality: KeyQuality.Minor),
-        (Relative: Key.FMajor, Root: Note.D, Accidents: -1, Quality: KeyQuality.Minor),
-        (Relative: Key.GFlatMajor, Root: Note.EFlat, Accidents: -6, Quality: KeyQuality.Minor),
-        (Relative: Key.GMajor, Root: Note.E, Accidents: 1, Quality: KeyQuality.Minor),
-        (Relative: Key.AFlatMajor, Root: Note.F, Accidents: -4, Quality: KeyQuality.Minor),
-        (Relative: Key.AMajor, Root: Note.FSharp, Accidents: 3, Quality: KeyQuality.Minor),
-        (Relative: Key.BFlatMajor, Root: Note.G, Accidents: -2, Quality: KeyQuality.Minor),
-        (Relative: Key.BMajor, Root: Note.GSharp, Accidents: 5, Quality: KeyQuality.Minor)
+        (Relative: Key.fSharpMinor, Root: Note.a, Accidents: 3, Quality: KeyQuality.major),
+        (Relative: Key.fMinor, Root: Note.aFlat, Accidents: -4, Quality: KeyQuality.major),
+        (Relative: Key.gSharpMinor, Root: Note.b, Accidents: 5, Quality: KeyQuality.major),
+        (Relative: Key.gMinor, Root: Note.bFlat, Accidents: -2, Quality: KeyQuality.major),
+        (Relative: Key.aMinor, Root: Note.c, Accidents: 0, Quality: KeyQuality.major),
+        (Relative: Key.bFlatMinor, Root: Note.cSharp, Accidents: 7, Quality: KeyQuality.major),
+        (Relative: Key.bMinor, Root: Note.d, Accidents: 2, Quality: KeyQuality.major),
+        (Relative: Key.bFlatMinor, Root: Note.dFlat, Accidents: -5, Quality: KeyQuality.major),
+        (Relative: Key.cSharpMinor, Root: Note.e, Accidents: 4, Quality: KeyQuality.major),
+        (Relative: Key.cMinor, Root: Note.eFlat, Accidents: -3, Quality: KeyQuality.major),
+        (Relative: Key.dMinor, Root: Note.f, Accidents: -1, Quality: KeyQuality.major),
+        (Relative: Key.eFlatMinor, Root: Note.fSharp, Accidents: 6, Quality: KeyQuality.major),
+        (Relative: Key.eMinor, Root: Note.g, Accidents: 1, Quality: KeyQuality.major),
+        (Relative: Key.eFlatMinor, Root: Note.gFlat, Accidents: -6, Quality: KeyQuality.major),
+        (Relative: Key.cMajor, Root: Note.a, Accidents: 0, Quality: KeyQuality.minor),
+        (Relative: Key.bMajor, Root: Note.aFlat, Accidents: -7, Quality: KeyQuality.minor),
+        (Relative: Key.cSharpMinor, Root: Note.aSharp, Accidents: 7, Quality: KeyQuality.minor),
+        (Relative: Key.dMajor, Root: Note.b, Accidents: 2, Quality: KeyQuality.minor),
+        (Relative: Key.dFlatMajor, Root: Note.bFlat, Accidents: -5, Quality: KeyQuality.minor),
+        (Relative: Key.eFlatMajor, Root: Note.c, Accidents: -3, Quality: KeyQuality.minor),
+        (Relative: Key.eMajor, Root: Note.cSharp, Accidents: 4, Quality: KeyQuality.minor),
+        (Relative: Key.fMajor, Root: Note.d, Accidents: -1, Quality: KeyQuality.minor),
+        (Relative: Key.gFlatMajor, Root: Note.eFlat, Accidents: -6, Quality: KeyQuality.minor),
+        (Relative: Key.gMajor, Root: Note.e, Accidents: 1, Quality: KeyQuality.minor),
+        (Relative: Key.aFlatMajor, Root: Note.f, Accidents: -4, Quality: KeyQuality.minor),
+        (Relative: Key.aMajor, Root: Note.fSharp, Accidents: 3, Quality: KeyQuality.minor),
+        (Relative: Key.bFlatMajor, Root: Note.g, Accidents: -2, Quality: KeyQuality.minor),
+        (Relative: Key.bMajor, Root: Note.gSharp, Accidents: 5, Quality: KeyQuality.minor)
     ]
 
     public var rootName: String
@@ -111,7 +111,7 @@ public enum Key: Int
 
     public func vii() -> Note
     {
-        return self.quality == KeyQuality.Minor
+        return self.quality == KeyQuality.minor
                 ? generateKeyNotes()[6].sharp()
                 : generateKeyNotes()[6]
     }
@@ -126,9 +126,9 @@ public enum Key: Int
         return Key.allValues[self.rawValue].Relative
     }
 
-    public func degreeForNote(note:Note) -> Int
+    public func degreeForNote(_ note:Note) -> Int
     {
-        return generateKeyNotes().indexOf(note)! + 1
+        return generateKeyNotes().index(of: note)! + 1
     }
     
     private func generateKeyNotes() -> [Note]
@@ -148,7 +148,7 @@ public enum Key: Int
 
     private func createKeyFromFlatAccidents() -> [Note]
     {
-        var keyNotes = Array(Key.fifths.reverse())
+        var keyNotes = Array(Key.fifths.reversed())
         let max = (-1) * accidents
 
         for i in 0 ..< max
@@ -172,9 +172,9 @@ public enum Key: Int
         return keyNotes
     }
 
-    private func sortKeyNotes(notes: [Note]) -> [Note]
+    private func sortKeyNotes(_ notes: [Note]) -> [Note]
     {
-        var sortedkeyNotes = notes.sort({ n1, n2 in return n2 > n1 })
+        var sortedkeyNotes = notes.sorted(isOrderedBefore: { n1, n2 in return n2 > n1 })
 
         if(sortedkeyNotes.first == root)
         {
@@ -187,7 +187,7 @@ public enum Key: Int
         {
             last = sortedkeyNotes.last
             sortedkeyNotes.removeLast()
-            sortedkeyNotes.insert(last!, atIndex: 0)
+            sortedkeyNotes.insert(last!, at: 0)
         }
 
         return sortedkeyNotes

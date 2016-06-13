@@ -1,15 +1,15 @@
 public enum KeyHarmonizerFactory: Int
 {
-    case Triad
-    case Seventh
+    case triad
+    case seventh
     
-    public func createHarmonizer(key: Key) -> KeyHarmonizer
+    public func createHarmonizer(_ key: Key) -> KeyHarmonizer
     {
         switch self
         {
-        case Triad:
+        case triad:
             return TriadsKeyHarmonizer(key: key)
-        case Seventh:
+        case seventh:
             return SeventhsKeyHarmonizer(key: key)
         }
     }
